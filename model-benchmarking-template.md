@@ -1,6 +1,6 @@
-# Models Benchmarking Template and Profiling Metrics
+# Model Evaluation & Benchmarking
 
-## **How it works?**
+### **How it works?**
 
 1. **Download and Evaluate**: Run the model on a standardized dataset (e.g., ImageNet, COCO).  
 2. **Measure Performance**:  
@@ -9,19 +9,12 @@
 3. **Document Results**: Use the table above to document key metrics.  
 4. **Submit with PR**: Attach the benchmark results with your PR submission. 
 
-## **Benchmark Table Format** 
 
-Run the model on any edge device/sim tool, to highlight its `performance` and `usability`.  
-
-| **Model**          | **Task**             | **Accuracy**         | **Latency (ms)** | **Model Size (MB)** | **Platform**         | **References**                   |  
-|---------------------|----------------------|----------------------|------------------|---------------------|----------------------|-----------------------------------|  
-| MobileNet V2        | Image Classification | 72.0%                | 25               | 4.3                 | Android, iOS, Web    | [TensorFlow Lite](https://www.tensorflow.org/lite) |  
-
-## **Profiling Key Metrics (General Template)**
+## **Evaluation/Profiling Key Metrics (General Template)**
 
 The goal is to optimize the model performance to meet the HW Platform requirements (Hardware-aware).
 
-### **Edge Devices**
+**Edge Devices**
 
 | **Model Watch Metrics** | **Description**     |
 |-------------------------|---------------------|
@@ -47,7 +40,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Network Bandwidth (MB/s)             | The amount of data transferred over the network per second. |
 | Model Complexity (FLOPs)             | The number of floating-point operations required for a single inference. |
 
-### **MCUs**
+**MCUs**
 
 | **Model Watch Metrics** | **Description**     |
 |-------------------------|---------------------|
@@ -74,7 +67,21 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Startup Time (ms)                    | The time taken for the model to load and be ready for inference. |
 | Model Complexity (FLOPs)             | The number of floating-point operations required for a single inference. |
 
-## Benchmark Tools
+
+## Model Benchmarking
+
+### **Benchmark Table Format** 
+
+Run the model on any edge device/sim tool, to highlight its `performance` and `usability`.  
+
+| **Model**          | **Task**             | **Accuracy**         | **Latency (ms)** | **Model Size (MB)** | **Platform**         | **References**                   |  
+|---------------------|----------------------|----------------------|------------------|---------------------|----------------------|-----------------------------------|  
+| MobileNet V2        | Image Classification | 72.0%                | 25               | 4.3                 | Android, iOS, Web    | [TensorFlow Lite](https://www.tensorflow.org/lite) |  
+
+### Benchmarking Tools
+
+This a list of go-to tools for benchmarking small AI models seamlessly. These tools cater to a variety of tasks and platforms, from edge devices to desktop environments:
+
 
 ### **1. General-Purpose Model Benchmarking Tools**
 #### **[ONNX Runtime](https://onnxruntime.ai/)**
@@ -197,11 +204,8 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 
 ## Resources
 
-**Tips for Seamless Benchmarking**  
-
-```
+### **Tips for Seamless Benchmarking**  
 - **Choose the Right Hardware**: Match the device to the model's deployment environment.  
 - **Automate with Scripts**: Use tools with Python/CLI APIs to run repeatable tests.  
 - **Measure Across Scenarios**: Include latency, throughput, memory usage, and accuracy metrics.  
 - **Document Results**: Store benchmarks in a standardized format (e.g., Markdown tables).  
-```
