@@ -21,7 +21,7 @@ Run the model on any edge device/sim tool, to highlight its `performance` and `u
 
 The goal is to optimize the model performance to meet the HW Platform requirements (Hardware-aware).
 
-**### Edge Devices**
+### **Edge Devices**
 
 | **Model Watch Metrics** | **Description**     |
 |-------------------------|---------------------|
@@ -47,7 +47,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Network Bandwidth (MB/s)             | The amount of data transferred over the network per second. |
 | Model Complexity (FLOPs)             | The number of floating-point operations required for a single inference. |
 
-**### MCUs**
+### **MCUs**
 
 | **Model Watch Metrics** | **Description**     |
 |-------------------------|---------------------|
