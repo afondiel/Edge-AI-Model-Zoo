@@ -2,9 +2,9 @@
 
 ## Overview
 
-This is a comprehensive guideline for evaluating and benchmarking the best model for edge applications.
+This is a comprehensive guideline for evaluating and benchmarking the well-suited model for edge applications.
 
-## **Choosing the best Models for Edge Applications**
+## **Choosing the Well-suited Models for Edge Applications**
 
 When selecting a machine learning model for edge devices (e.g., CPU-based IoT devices, embedded systems), consider the following key factors:
 
