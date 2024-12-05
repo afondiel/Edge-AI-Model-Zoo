@@ -1,13 +1,60 @@
 # Model Evaluation & Benchmarking
 
-### **How it works?**
+## Overview
 
-1. **Download and Evaluate**: Run the model on a standardized dataset (e.g., ImageNet, COCO).  
-2. **Measure Performance**:  
-   - Use tools like ONNX Runtime, TensorFlow Lite Benchmark Tool, or CoreML `Profiler`.  
-   - Record latency on mobile/edge devices (e.g., Raspberry Pi, Jetson Nano).  
-3. **Document Results**: Use the table above to document key metrics.  
-4. **Submit with PR**: Attach the benchmark results with your PR submission. 
+This is a comprehensive guideline for evaluating and benchmarking the best model for edge applications.
+
+## Choosing the best Models for Edge Applications
+
+When selecting a machine learning model for edge devices (e.g., CPU-based IoT devices, embedded systems), consider the following key factors:
+
+#### **1. Computational Efficiency**
+   - **Key Metric**: **OPS (GFlops)**  
+     - Choose models with low GFlops to reduce latency and power consumption on CPUs.
+     - Lower GFlops are especially critical for real-time applications like object detection or pose estimation.
+
+#### **2. Model Size**
+   - **Key Metric**: **Model Size (MB)**  
+     - Smaller models reduce memory and storage demands, enabling deployment on devices with limited resources.
+     - Smaller models are preferable when frequent updates or OTA deployment is required.
+
+#### **3. Memory Footprint**
+   - **Key Metric**: **Parameters (M)**  
+     - Fewer parameters decrease memory usage during inference, which is vital for devices with low RAM.
+     - Models with excessive parameters may lead to slower performance on CPUs.
+
+#### **4. Resolution vs. Performance Trade-off**
+   - **Key Metric**: **Resolution**  
+     - Higher resolutions improve accuracy but demand more computational resources.
+     - For edge devices, consider using low-resolution models unless high accuracy is critical.
+
+#### **5. Latency and Real-Time Capability**
+   - Models must deliver low-latency predictions to meet real-time requirements in applications such as autonomous vehicles, surveillance, and robotics.
+   - Test the model's performance under expected workloads to ensure acceptable response times.
+
+#### **6. Energy Efficiency**
+   - Devices with limited power sources (e.g., battery-powered) require energy-efficient models.
+   - Opt for models with lower GFlops and reduced computation overhead.
+
+#### **7. Deployment Constraints**
+   - **Device Constraints**: Evaluate the device's CPU architecture, memory, storage, and thermal limits.
+   - **Framework Compatibility**: Ensure the model is compatible with deployment frameworks (e.g., TensorFlow Lite, ONNX, OpenVINO).
+
+#### **8. Accuracy vs. Resource Trade-Off**
+   - Prioritize models that provide acceptable accuracy while meeting edge resource limitations.
+   - Benchmark multiple models against the target application's accuracy requirements.
+
+### **Practical Steps**
+1. **Benchmark Models**: Evaluate models for latency, memory usage, and energy efficiency on the target edge hardware.
+2. **Select Low-Complexity Backbones**: Use lightweight architectures like MobileNet, EfficientNet-Lite, or low-resolution versions of larger models.
+3. **Quantize Models**: Convert to INT8 or lower precision formats to further reduce size and computation.
+4. **Simulate Edge Scenarios**: Test under realistic conditions (low power, intermittent connectivity).
+5. **Optimize Pipelines**: Use techniques like pruning, knowledge distillation, or layer fusion for further optimization.
+
+### Rule of Thumb:
+- **Small Devices (e.g., IoT sensors)**: Choose the smallest model with acceptable accuracy (low size, params, and GFlops).
+- **Mid-Power Devices (e.g., drones, edge servers)**: Use low-resolution models with moderate complexity.
+- **High-Critical Applications (e.g., autonomous vehicles)**: Opt for models that balance accuracy and latency.
 
 
 ## **Evaluation/Profiling Key Metrics (General Template)**
@@ -28,7 +75,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Throughput (inferences/sec) | The number of inferences the model can perform per second. |
 | Deployment Time (s)     | The time taken to deploy the model onto the device. |
 | Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
-| Model Complexity/ops (GFLOPs)             | The number of floating-point operations required for a single inference. |
+| Model Complexity/OPS (GFlops)             | The number of floating-point operations required for a single inference. |
 
 | **Target HW Platform Watch Metrics** | **Description**     |
 |--------------------------------------|---------------------|
@@ -54,7 +101,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Throughput (inferences/sec) | The number of inferences the model can perform per second. |
 | Deployment Time (s)     | The time taken to deploy the model onto the device. |
 | Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
-| Model Complexity/ops (GFLOPs)        | The number of floating-point operations required for a single inference. |
+| Model Complexity/OPS (GFlops)        | The number of floating-point operations required for a single inference. |
 
 | **Target HW/Platform Watch Metrics** | **Description**     |
 |--------------------------------------|---------------------|
@@ -70,6 +117,15 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 
 ## Model Benchmarking
 
+### **How it works?**
+
+1. **Download and Evaluate**: Run the model on a standardized dataset (e.g., ImageNet, COCO).  
+2. **Measure Performance**:  
+   - Use tools like ONNX Runtime, TensorFlow Lite Benchmark Tool, or CoreML `Profiler`.  
+   - Record latency on mobile/edge devices (e.g., Raspberry Pi, Jetson Nano).  
+3. **Document Results**: Use the table above to document key metrics.  
+4. **Submit with PR**: Attach the benchmark results with your PR submission. 
+
 ### **Benchmark Table Format** 
 
 Run the model on any edge device/sim tool, to highlight its `performance` and `usability`.  
@@ -80,8 +136,7 @@ Run the model on any edge device/sim tool, to highlight its `performance` and `u
 
 ### Benchmarking Tools
 
-This a list of go-to tools for benchmarking small AI models seamlessly. These tools cater to a variety of tasks and platforms, from edge devices to desktop environments:
-
+This is a list of go-to tools for benchmarking small AI models seamlessly. These tools cater to a variety of tasks and platforms, from edge devices to desktop environments:
 
 ### **1. General-Purpose Model Benchmarking Tools**
 #### **[ONNX Runtime](https://onnxruntime.ai/)**
@@ -163,7 +218,6 @@ This a list of go-to tools for benchmarking small AI models seamlessly. These to
 - **Best For**: Model accuracy evaluation.
 
 ---
-
 ### **4. Multimodal Model Tools**  
 #### **[Hugging Face Evaluate](https://huggingface.co/docs/evaluate/index)**  
 - **Use Case**: Benchmark multimodal tasks (vision-language, text-audio).  
