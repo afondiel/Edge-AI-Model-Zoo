@@ -28,7 +28,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Throughput (inferences/sec) | The number of inferences the model can perform per second. |
 | Deployment Time (s)     | The time taken to deploy the model onto the device. |
 | Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
-| Model Complexity (GFLOPs)             | The number of floating-point operations required for a single inference. |
+| Model Complexity/ops (GFLOPs)             | The number of floating-point operations required for a single inference. |
 
 | **Target HW Platform Watch Metrics** | **Description**     |
 |--------------------------------------|---------------------|
