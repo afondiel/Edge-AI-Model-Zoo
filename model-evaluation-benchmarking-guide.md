@@ -1,10 +1,10 @@
-# Model Evaluation & Benchmarking
+# **Model Evaluation & Benchmarking**
 
 ## Overview
 
 This is a comprehensive guideline for evaluating and benchmarking the best model for edge applications.
 
-## Choosing the best Models for Edge Applications
+## **Choosing the best Models for Edge Applications**
 
 When selecting a machine learning model for edge devices (e.g., CPU-based IoT devices, embedded systems), consider the following key factors:
 
@@ -115,7 +115,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Startup Time (ms)                    | The time taken for the model to load and be ready for inference. |
 
 
-## Model Benchmarking
+## **Model Benchmarking**
 
 ### **How it works?**
 
@@ -256,7 +256,7 @@ This is a list of go-to tools for benchmarking small AI models seamlessly. These
 
 ---
 
-## Resources
+## **Resources**
 
 ### **Tips for Seamless Benchmarking**  
 - **Choose the Right Hardware**: Match the device to the model's deployment environment.  
