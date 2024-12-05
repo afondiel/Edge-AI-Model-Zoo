@@ -19,15 +19,16 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | **Model Watch Metrics** | **Description**     |
 |-------------------------|---------------------|
 |          | Monitors the model's performance and resource usage over time. |
-| Model Params Size (MB)         | The size of the model's parameters in megabytes, which impacts memory usage and loading time. |
+| Model Params (M)         | The size of the model's parameters in millions (10e6), which impacts memory usage and loading time. |
 | Model Size (MB)         | The size of the model file in megabytes, indicating storage requirements. |
 | Accuracy (%)            | The percentage of correct predictions made by the model. |
-| Latency (ms)            | The time taken to process a single input, measured in milliseconds. |
+| Error Rate (%)          | The percentage of incorrect predictions made by the model. |
+| Latency (ms)            | The time taken to process a single input data, measured in milliseconds. |
 | Inference Time (ms)     | The total time taken to complete a single inference, including data preprocessing and postprocessing. |
 | Throughput (inferences/sec) | The number of inferences the model can perform per second. |
-| Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
-| Error Rate (%)          | The percentage of incorrect predictions made by the model. |
 | Deployment Time (s)     | The time taken to deploy the model onto the device. |
+| Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
+| Model Complexity (GFLOPs)             | The number of floating-point operations required for a single inference. |
 
 | **Target HW Platform Watch Metrics** | **Description**     |
 |--------------------------------------|---------------------|
@@ -38,34 +39,33 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Temperature (°C)                     | The operating temperature of the device while running the model. |
 | Startup Time (ms)                    | The time taken for the model to load and be ready for inference. |
 | Network Bandwidth (MB/s)             | The amount of data transferred over the network per second. |
-| Model Complexity (FLOPs)             | The number of floating-point operations required for a single inference. |
 
 **MCUs**
 
 | **Model Watch Metrics** | **Description**     |
 |-------------------------|---------------------|
 |            | Monitors the model's performance and resource usage over time. |
-| Model Params Size (MB)         | The size of the model's parameters in megabytes, which impacts memory usage and loading time. |
+| Model Params (M)         | The size of the model's parameters in millions (10e6), which impacts memory usage and loading time. |
 | Model Size (MB)         | The size of the model file in megabytes, indicating storage requirements. |
-| Accuracy (%)            | The percentage of correct predictions made by the model for image classification tasks. |
-| Latency (ms)            | The time taken to process a single input for image classification, measured in milliseconds. |
+| Accuracy (%)            | The percentage of correct predictions made by the model for a given task. |
+| Error Rate (%)          | The percentage of incorrect predictions made by the model. |
+| Latency (ms)            | The time taken to process a single input data, measured in milliseconds. |
 | Inference Time (ms)     | The total time taken to complete a single inference, including data preprocessing and postprocessing. |
 | Throughput (inferences/sec) | The number of inferences the model can perform per second. |
-| Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
-| Error Rate (%)          | The percentage of incorrect predictions made by the model. |
 | Deployment Time (s)     | The time taken to deploy the model onto the device. |
+| Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
+| Model Complexity/ops (GFLOPs)        | The number of floating-point operations required for a single inference. |
 
 | **Target HW/Platform Watch Metrics** | **Description**     |
 |--------------------------------------|---------------------|
 |            | Monitors the hardware platform's performance and resource usage. |
 | RAM (KB)                             | The amount of random-access memory required by the model, measured in kilobytes. |
 | Flash (KB)                           | The amount of flash memory required by the model, measured in kilobytes. |
-| Computing Workload (%): CPU, GPU, NPU, TPU, VPU | The percentage of computing resources utilized by the model on different processing units for image classification. |
-| Computing Speed/Clock (MHz)          | The operating frequency of the processing units for image classification, measured in megahertz. |
+| Computing Workload (%): CPU, GPU, NPU, TPU, VPU | The percentage of computing resources utilized by the model on different processing units for a given task. |
+| Computing Speed/Clock (MHz)          | The operating frequency of the processing units measured in megahertz. |
 | Energy Consumption (mWh)             | Measures the amount of energy consumed by the model during inference. |
 | Temperature (°C)                     | The operating temperature of the device while running the model. |
 | Startup Time (ms)                    | The time taken for the model to load and be ready for inference. |
-| Model Complexity (FLOPs)             | The number of floating-point operations required for a single inference. |
 
 
 ## Model Benchmarking
