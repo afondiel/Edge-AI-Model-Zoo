@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/Contribute-Welcome-green)](./CONTRIBUTING.md)
+
 # Edge-AI Model Zoo
 
 ## Table of Contents
