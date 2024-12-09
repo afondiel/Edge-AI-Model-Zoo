@@ -1,4 +1,4 @@
-# **Model Evaluation & Benchmarking**
+# **Model Evaluation & Profiling**
 
 ## Overview
 
@@ -59,11 +59,11 @@ When selecting a machine learning model for edge devices (e.g., CPU-based IoT de
 
 ## **Evaluation/Profiling Key Metrics (General Template)**
 
-The goal is to optimize the model performance to meet the HW Platform requirements (Hardware-aware).
+The goal is to analyze the model performance to identify bottlenecks and optimize its execution time and memory usage (model and HW Platform) to meet the real-time application requirements.
 
 **Edge Devices**
 
-| **Model Watch Metrics** | **Description**     |
+| **Model Profiling Metrics** | **Description**     |
 |-------------------------|---------------------|
 |          | Monitors the model's performance and resource usage over time. |
 | Model Params (M)         | The size of the model's parameters in millions (10e6), which impacts memory usage and loading time. |
@@ -77,7 +77,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
 | Model Complexity/OPS (GFlops)             | The number of floating-point operations required for a single inference. |
 
-| **Target HW Platform Watch Metrics** | **Description**     |
+| **HW Platform Profiling Metrics** | **Description**     |
 |--------------------------------------|---------------------|
 |             | Monitors the hardware platform's performance and resource usage. |
 | Computing Workload (%): CPU, GPU, NPU, TPU, VPU | The percentage of computing resources utilized by the model on different processing units. |
@@ -89,7 +89,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 
 **MCUs**
 
-| **Model Watch Metrics** | **Description**     |
+| **Model Profiling Metrics** | **Description**     |
 |-------------------------|---------------------|
 |            | Monitors the model's performance and resource usage over time. |
 | Model Params (M)         | The size of the model's parameters in millions (10e6), which impacts memory usage and loading time. |
@@ -103,7 +103,7 @@ The goal is to optimize the model performance to meet the HW Platform requiremen
 | Memory Footprint (MB)   | The total amount of memory used by the model during execution. |
 | Model Complexity/OPS (GFlops)        | The number of floating-point operations required for a single inference. |
 
-| **Target HW/Platform Watch Metrics** | **Description**     |
+| **HW Platform Profiling Metrics** | **Description**     |
 |--------------------------------------|---------------------|
 |            | Monitors the hardware platform's performance and resource usage. |
 | RAM (KB)                             | The amount of random-access memory required by the model, measured in kilobytes. |
