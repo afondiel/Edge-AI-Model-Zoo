@@ -1,4 +1,4 @@
-# **Model Evaluation & Profiling**
+# **Model Evaluation & Benchmarking**
 
 ## Overview
 
