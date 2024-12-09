@@ -4,14 +4,42 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Model Categories and Descriptions](#model-categories-and-descriptions)
+- [Model Zoo](#model-zoo)
+- [Model Categories (Non-Exhaustive List)](#model-categories-non-exhaustive-list)
 - [Resources](#resources)
 
 ## Overview
 
 There are up to **hundreds** of optimized pre-trained models for on-device ready-to-deploy, available in AI platform hubs like Hugging Face, GitHub Model Zoos, TensorFlow & PyTorch Hub, and more.
 
-## Model Categories and Descriptions
+## Model Zoo
+
+| Model Zoo | Description | Links |
+|-----------|-------------|------|
+| Edge AI Labs Model Zoo | A collection of pre-trained, optimized models for low-power devices.| [EdgeAI Labs](https://edgeai.modelnova.ai/models/) |
+| Edge Impulse Model Zoo | A repository of models optimized for edge devices. | [Edge Impulse Model Zoo](https://www.edgeimpulse.com/) |
+| OpenVINO Model Zoo | A collection of pre-trained models ready for use with Intel's OpenVINO toolkit. | [OpenVINO Model Zoo](https://github.com/openvinotoolkit/open_model_zoo) |
+| LiteRT Pre-trained models | Pre-trained models optimized for Google's Lite Runtime. | [LiteRT Pre-trained models](https://ai.google.dev/edge/litert/models/trained) |
+| Qualcomm Models Zoo | A collection of AI models from Qualcomm. | [Qualcomm Models Zoo](https://github.com/quic/ai-hub-models/) |
+| stm32ai-modelzoo | AI Model Zoo for STM32 microcontroller devices. | [stm32ai-modelzoo](https://github.com/STMicroelectronics/stm32ai-modelzoo/) |
+| Model Zoo | A collection of pre-trained models for various machine learning tasks. | [Model Zoo](https://modelzoo.co/) |
+| Hugging Face Models| A collection of pre-trained models for various machine learning tasks. | [Hugging Face Models](https://huggingface.co/models) |
+| Papers with Code | A repository that links academic papers to their respective code and models. | [Papers with Code](https://paperswithcode.com/) |
+| ONNX Model Zoo | A collection of pre-trained, state-of-the-art models in the ONNX format. | [ONNX Model Zoo](https://github.com/onnx/models) |
+| TensorFlow Model Garden | A repository with a collection of TensorFlow models. | [TensorFlow Model Garden](https://github.com/tensorflow/models/tree/master) |
+| MediaPipe | Framework for building multimodal applied machine learning pipelines. | [MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/guide) |
+| Pytorch Model Zoo | A hub for pre-trained models on PyTorch framework. | [Pytorch Model Zoo](https://pytorch.org/serve/model_zoo.html) |
+| MXNet Model Zoo | A collection of pre-trained models for the Apache MXNet framework. | [MXNet Model Zoo](https://mxnet.apache.org/versions/1.1.0/model_zoo/index.html) |
+| Deci’s Model Zoo | A curated list of high-performance deep learning models. | [Deci’s Model Zoo](https://deci.ai/modelzoo/) |
+| NVIDIA Pretrained AI Models | Accelerate AI development with world-class customizable pretrained models from NVIDIA. | [NVIDIA Pretrained AI Models](https://developer.nvidia.com/ai-models) |
+| Jetson Model Zoo and Community Projects | NVIDIA's collection of models and projects for Jetson platform. | [Jetson Model Zoo and Community Projects](https://developer.nvidia.com/embedded/community/jetson-projects) |
+| Magenta | Models for music and art generation from Google's Magenta project. | [Magenta](https://github.com/magenta/magenta/tree/main/magenta/models/arbitrary_image_stylization) |
+| Awesome-CoreML-Models Public | A collection of CoreML models for iOS developers. | [Awesome-CoreML-Models Public](https://github.com/likedan/Awesome-CoreML-Models) |
+| Pinto Models | A variety of models for computer vision tasks. | [Pinto Models](https://github.com/PINTO0309/PINTO_model_zoo) |
+| Baidu AI Open Model Zoo | Baidu's collection of AI models. | [Baidu AI Open Model Zoo](https://ai.baidu.com/tech/modelzoo) |
+| Hailo Model Zoo | A set of models optimized for Hailo's AI processors. | [Hailo Model Zoo](https://github.com/hailo-ai/hailo_model_zoo) |
+
+## Model Categories (Non-Exhautive List)
 
 The table below categorizes some of these models based on their primary functionalities:
 
@@ -87,29 +115,9 @@ The table below categorizes some of these models based on their primary function
 
 ## Resources
 
-**[Model Benchmarking & Profiling Metrics](./model-benchmarking-profiling.md)**
+**Model Evaluation & Benchmarking**: 
 
-**Model Zoos:**
-- [Model Zoo](https://modelzoo.co/)
-- [Papers with Code](https://paperswithcode.com/)
-- [Onnx Model Zoo](https://github.com/onnx/models)
-- [LiteRT Pre-trained models](https://ai.google.dev/edge/litert/models/trained)
-- [TensorFlow Model Garden](https://github.com/tensorflow/models/tree/master)
-- [MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/guide)
-- [Pytorch Model Zoo](https://pytorch.org/serve/model_zoo.html)
-- [MXNet Model Zoo](https://mxnet.apache.org/versions/1.1.0/model_zoo/index.html)
-- [Edge Impulse Model Zoo](https://www.edgeimpulse.com/)
-- [OpenVINO Model Zoo](https://github.com/openvinotoolkit/open_model_zoo)
-- [Deci’s Model Zoo](https://deci.ai/modelzoo/)
-- [NVIDIA TAO - Cloud server](https://developer.nvidia.com/tao-toolkit)
-- [Jetson Model Zoo and Community Projects](https://developer.nvidia.com/embedded/community/jetson-projects)
-- [Magenta](https://github.com/magenta/magenta/tree/main/magenta/models/arbitrary_image_stylization)
-- [Awesome-CoreML-Models Public](https://github.com/likedan/Awesome-CoreML-Models)
-- [Pinto Models](https://github.com/PINTO0309/PINTO_model_zoo)
-- [Baidu AI Open Model Zoo](https://ai.baidu.com/tech/modelzoo)
-- [Hailo Model Zoo](https://github.com/hailo-ai/hailo_model_zoo)
-- [Qualcomm Models Zoo](https://github.com/quic/ai-hub-models/)
-- [stm32ai-modelzoo](https://github.com/STMicroelectronics/stm32ai-modelzoo/): AI Model Zoo for STM32 devices
+- **[Model Evaluation & Benchmarking](./model-evaluation-benchmarking-guide)**
 
 **Deployment Frameworks/Toolkits**
 - [TensorFlow Lite](https://www.tensorflow.org/lite)
