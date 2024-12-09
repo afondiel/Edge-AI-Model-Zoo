@@ -59,7 +59,7 @@ When selecting a machine learning model for edge devices (e.g., CPU-based IoT de
 
 ## **Evaluation/Profiling Key Metrics (General Template)**
 
-The goal is to analyze the model performance to identify bottlenecks and optimize its execution time and memory usage (model and HW Platform) to meet the real-time application requirements.
+The goal is to analyze the model performance to identify `bottlenecks` and `optimize` its execution time and memory usage (model and HW Platform) to meet the real-time application requirements.
 
 **Edge Devices**
 
