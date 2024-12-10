@@ -167,6 +167,8 @@ The table below categorizes some of these models based on their primary function
 - AMD:
     - https://www.amd.com/en/products/adaptive-socs-and-fpgas/versal/gen2/ai-edge-series.html
     - https://www.amd.com/en/solutions/healthcare/edge/ai.html
+- GOOGLE DEVELOPER:
+    - Google AI Edge team: https://developers.googleblog.com/en/search/?product_categories=AI+Edge 
 - https://community.arm.com/arm-community-blogs/b/ai-and-ml-blog/posts/optimizing-ai-models-for-arm-ethos-u-npus-using-the-nvidia-tao-toolkit
 - https://www.nota.ai/community/integrating-launchx-with-nvidia-tao-toolkit-for-running-on-various-edge-devices
 - https://www.hackster.io/sandeep-mistry/nvidia-tao-object-detection-ml-models-on-arm-based-devices-3e51fb/
