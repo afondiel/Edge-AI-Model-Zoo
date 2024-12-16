@@ -19,7 +19,8 @@ There are up to **hundreds** of optimized pre-trained models for on-device ready
 | Edge AI Labs Model Zoo | A collection of pre-trained, optimized models for low-power devices.| [EdgeAI Labs](https://edgeai.modelnova.ai/models/) |
 | Edge Impulse Model Zoo | A repository of models optimized for edge devices. | [Edge Impulse Model Zoo](https://www.edgeimpulse.com/) |
 | OpenVINO Model Zoo | A collection of pre-trained models ready for use with Intel's OpenVINO toolkit. | [OpenVINO Model Zoo](https://github.com/openvinotoolkit/open_model_zoo) |
-| LiteRT Pre-trained models | Pre-trained models optimized for Google's Lite Runtime. | [LiteRT Pre-trained models](https://ai.google.dev/edge/litert/models/trained) |
+| LiteRT Pre-trained models | Pre-trained models optimized for Google's Lite Runtime. | [LiteRT Pre-trained Models](https://ai.google.dev/edge/litert/models/trained) |
+| Keras Applications | Pre-trained models for Keras applications| [Keras Pre-trained Models](https://keras.io/api/applications/#available-models) |
 | Qualcomm Models Zoo | A collection of AI models from Qualcomm. | [Qualcomm Models Zoo](https://github.com/quic/ai-hub-models/) |
 | stm32ai-modelzoo | AI Model Zoo for STM32 microcontroller devices. | [stm32ai-modelzoo](https://github.com/STMicroelectronics/stm32ai-modelzoo/) |
 | Model Zoo | A collection of pre-trained models for various machine learning tasks. | [Model Zoo](https://modelzoo.co/) |
