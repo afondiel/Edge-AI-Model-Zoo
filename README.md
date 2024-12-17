@@ -118,7 +118,7 @@ The table below categorizes some of these models based on their primary function
 
 **Model Evaluation & Benchmarking**: 
 
-- **[Model Evaluation & Benchmarking](./model-evaluation-benchmarking-guide)**
+- **[Model Evaluation & Benchmarking](./model-evaluation-benchmarking-guide.md)**
 
 **Deployment Frameworks/Toolkits**
 - [TensorFlow Lite](https://www.tensorflow.org/lite)
