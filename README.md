@@ -5,7 +5,7 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Model Zoo](#model-zoo)
-- [Model Categories (Non-Exhaustive List)](#model-categories-non-exhaustive-list)
+- [Model Applications](#model-applications)
 - [Resources](#resources)
 
 ## Overview
@@ -40,9 +40,9 @@ There are up to **hundreds** of optimized pre-trained models for on-device ready
 | Baidu AI Open Model Zoo | Baidu's collection of AI models. | [Baidu AI Open Model Zoo](https://ai.baidu.com/tech/modelzoo) |
 | Hailo Model Zoo | A set of models optimized for Hailo's AI processors. | [Hailo Model Zoo](https://github.com/hailo-ai/hailo_model_zoo) |
 
-## Model Categories (Non-Exhautive List)
+## Model Applications
 
-The table below categorizes some of these models based on their primary functionalities:
+The table below categorizes some of these models based on their primary capabilities for real-world applications:
 
 | Category | Model | Description | Reference |
 |---|---|---|---|
