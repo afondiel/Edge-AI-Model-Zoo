@@ -117,9 +117,11 @@ The table below categorizes some of these models based on their primary capabili
 ## Resources
 
 **Model Evaluation & Benchmarking**: 
-
 - **[Model Evaluation & Benchmarking Guide](./model-eval-benchmarking-guide.md)**
-  
+
+**Edge-AI-Platform:**
+- [Edge-AI Platform List](https://github.com/afondiel/Edge-AI-Platform)
+
 **Deployment Frameworks/Toolkits**
 - [TensorFlow Lite](https://www.tensorflow.org/lite)
     - [TFLite Model Maker](https://www.tensorflow.org/lite/models/modify/model_maker)
