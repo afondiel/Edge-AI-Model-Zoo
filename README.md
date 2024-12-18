@@ -2,15 +2,15 @@
 
 # Edge-AI Model Zoo
 
+## Overview
+
+There are up to **hundreds** of optimized pre-trained models for on-device ready-to-deploy, available in AI platform hubs like Hugging Face, GitHub Model Zoos, TensorFlow & PyTorch Hub, and more.
+
 ## Table of Contents
 - [Overview](#overview)
 - [Model Zoo](#model-zoo)
 - [Model Applications](#model-applications)
 - [Resources](#resources)
-
-## Overview
-
-There are up to **hundreds** of optimized pre-trained models for on-device ready-to-deploy, available in AI platform hubs like Hugging Face, GitHub Model Zoos, TensorFlow & PyTorch Hub, and more.
 
 ## Model Zoo
 
