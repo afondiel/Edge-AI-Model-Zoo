@@ -103,9 +103,9 @@ Here, the goal is to analyze the model performance to identify bottlenecks and o
 
 **Short version**:
 
-| **Model**       | **Task**               | **Accuracy** | **Latency (ms)** | **Model Size (MB)** | **Platform**         | **Reference**                         |
-|------------------|------------------------|--------------|------------------|---------------------|----------------------|---------------------------------------|
-| MobileNet V2     | Image Classification  | 72.0%        | 25               | 4.3                 | Android, iOS, Web    | [TensorFlow Lite](https://www.tensorflow.org/lite) |
+| **Model**       | **Task**               | **Accuracy** | **Latency (ms)** | **Model Size (MB)** |**Params Size (MB)** | **Platform**         | **Reference**                         |
+|------------------|------------------------|--------------|------------------|---------------------|---------------------|----------------------|---------------------------------------|
+| MobileNet V2     | Image Classification  | 72.0%        | 25               | 4.3                 |3.5                 | Android, iOS, Web    | [TensorFlow Lite](https://www.tensorflow.org/lite) |
 
 **Long version:**
 
