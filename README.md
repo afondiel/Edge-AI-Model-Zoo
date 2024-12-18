@@ -120,7 +120,7 @@ The table below categorizes some of these models based on their primary capabili
 - **[Model Evaluation & Benchmarking Guide](./model-eval-benchmarking-guide.md)**
 
 **Edge-AI-Platform:**
-- [Edge-AI Platform List](https://github.com/afondiel/Edge-AI-Platform)
+- [Edge-AI Platform List](https://github.com/afondiel/Edge-AI-Platforms)
 
 **Deployment Frameworks/Toolkits**
 - [TensorFlow Lite](https://www.tensorflow.org/lite)
