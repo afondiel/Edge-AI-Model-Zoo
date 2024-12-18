@@ -96,6 +96,62 @@ Here, the goal is to analyze the model performance to identify bottlenecks and o
 2. **Measure Performance**:  
    - Use tools like ONNX Runtime, TensorFlow Lite Benchmark Tool, or CoreML Profiler.  
    - Test latency on edge devices (e.g., Raspberry Pi, Jetson Nano).
+
+- Predict and benchmark `throughput` using [tensorflow](https://www.tensorflow.org/):
+```python
+# Predict and benchmark throughput using tensorflow
+def predict_and_benchmark_throughput(batched_input, infer, N_warmup_run=50, N_run=1000):
+
+  elapsed_time = []
+  all_preds = []
+  batch_size = batched_input.shape[0]
+
+  for i in range(N_warmup_run):
+    labeling = infer(batched_input)
+    preds = labeling['output_0'].numpy()
+
+  for i in range(N_run):
+    start_time = time.time()
+    labeling = infer(batched_input)
+    preds = labeling['output_0'].numpy()
+    end_time = time.time()
+    elapsed_time = np.append(elapsed_time, end_time - start_time)
+    all_preds.append(preds)
+
+    if i % 50 == 0:
+      print('Steps {}-{} average: {:4.1f}ms'.format(i, i+50, (elapsed_time[-50:].mean()) * 1000))
+
+  print('Throughput: {:.0f} images/s'.format(N_run * batch_size / elapsed_time.sum()))
+  return all_preds
+```
+- `Accuracy`:
+
+```python
+
+# Observe accuracy using tensorflow
+def show_predictions(model):
+
+  img_path = './data/img0.JPG'  # golden_retriever
+  img = image.load_img(img_path, target_size=(299, 299))
+  x = image.img_to_array(img)
+  x = np.expand_dims(x, axis=0)
+  x = preprocess_input(x)
+  x = tf.constant(x)
+
+  labeling = model(x)
+  preds = labeling['predictions'].numpy()
+
+  # decode the results into a list of tuples (class, description, probability)
+  # (one such list for each sample in the batch)
+  print('{} - Predicted: {}'.format(img_path, decode_predictions(preds, top=3)[0]))
+  plt.subplot(2,2,1)
+  plt.imshow(img);
+  plt.axis('off');
+  plt.title(decode_predictions(preds, top=3)[0][0][1])
+```
+
+
+
 3. **Document Results**: Log metrics in a benchmark table.
 4. **Submit with PR**: Attach benchmark results to your pull request.
 
