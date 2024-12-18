@@ -14,6 +14,8 @@ There are up to **hundreds** of optimized pre-trained models for on-device ready
 
 ## Model Zoo
 
+[Back to Table of Contents](#table-of-contents)
+
 | Model Zoo | Description | Links |
 |-----------|-------------|------|
 | Edge AI Labs Model Zoo | A collection of pre-trained, optimized models for low-power devices.| [EdgeAI Labs](https://edgeai.modelnova.ai/models/) |
@@ -41,6 +43,8 @@ There are up to **hundreds** of optimized pre-trained models for on-device ready
 | Hailo Model Zoo | A set of models optimized for Hailo's AI processors. | [Hailo Model Zoo](https://github.com/hailo-ai/hailo_model_zoo) |
 
 ## Model Applications
+
+[Back to Table of Contents](#table-of-contents)
 
 The table below categorizes some of these models based on their primary capabilities for real-world applications:
 
@@ -116,6 +120,8 @@ The table below categorizes some of these models based on their primary capabili
 
 ## Resources
 
+[Back to Table of Contents](#table-of-contents)
+
 **Model Evaluation & Benchmarking**: 
 - **[Model Evaluation & Benchmarking Guide](./model-eval-benchmarking-guide.md)**
 
@@ -180,6 +186,9 @@ The table below categorizes some of these models based on their primary capabili
 - https://www.nota.ai/community/integrating-launchx-with-nvidia-tao-toolkit-for-running-on-various-edge-devices
 - https://www.hackster.io/sandeep-mistry/nvidia-tao-object-detection-ml-models-on-arm-based-devices-3e51fb/
 - https://blog.st.com/tao-toolkit/
+
+[Back to Table of Contents](#table-of-contents)
+
 
 **Blogs:**
 - [13 Free Resources and Model Zoos for Deep Learning and Computer Vision Models](https://www.edge-ai-vision.com/2022/04/13-free-resources-and-model-zoos-for-deep-learning-and-computer-vision-models/)
