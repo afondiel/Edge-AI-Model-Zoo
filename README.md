@@ -138,6 +138,9 @@ The table below categorizes some of these models based on their primary capabili
 - [MLIR](https://mlir.llvm.org/)
 - [NVIDIA Triton Inference Server](https://developer.nvidia.com/nvidia-triton-inference-server)
 
+**AI Platforms:**
+- [Edge Impulse](https://edgeimpulse.com)
+
 **Companies developing AI solutions at the Edge**
 
 - [Intel](https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html)
