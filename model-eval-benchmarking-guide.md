@@ -135,71 +135,85 @@ Depth counts the number of layers with parameters.
 
 ### **Benchmarking Tools**
 
-#### **1. General-Purpose Tools**
-##### **[ONNX Runtime](https://onnxruntime.ai/)**
-- **Use Case**: Benchmark ONNX models across platforms (CPU, GPU, ARM).
-- **Features**:  
-  - Optimized inference for small models.  
-  - Built-in performance profiling.
-- **Best For**: Cross-platform benchmarking.
+## **Benchmarking Tools**
 
-##### **[TensorFlow Lite Benchmark Tool](https://www.tensorflow.org/lite/performance/measurement)**
-- **Use Case**: Profile TFLite models on mobile/edge devices.
-- **Features**:  
-  - Profiling latency, memory, and acceleration.
-  - Android and iOS support.
-- **Best For**: Mobile inference.
+<details>
+  <summary>1. General-Purpose Tools</summary>
 
-##### **[PyTorch Benchmark Utilities](https://pytorch.org/tutorials/recipes/benchmark.html)**
-- **Use Case**: Benchmark PyTorch models for speed and memory usage.
-- **Features**:  
-  - Granular performance tracking with `torch.utils.benchmark`.  
-  - CUDA optimization testing.
-- **Best For**: Development-phase PyTorch models.
+  ##### **[ONNX Runtime](https://onnxruntime.ai/)**
+  - **Use Case**: Benchmark ONNX models across platforms (CPU, GPU, ARM).
+  - **Features**:  
+    - Optimized inference for small models.  
+    - Built-in performance profiling.
+  - **Best For**: Cross-platform benchmarking.
 
-#### **2. Edge Devices**
+  ##### **[TensorFlow Lite Benchmark Tool](https://www.tensorflow.org/lite/performance/measurement)**
+  - **Use Case**: Profile TFLite models on mobile/edge devices.
+  - **Features**:  
+    - Profiling latency, memory, and acceleration.
+    - Android and iOS support.
+  - **Best For**: Mobile inference.
 
-##### **[Edge Impulse](https://www.edgeimpulse.com/)**
-- **Use Case**: Benchmark models specifically designed for edge devices, including MCUs and constrained hardware.  
-- **Features**:  
-  - Real-time inference profiling on low-power devices.  
-  - End-to-end platform for training, optimizing, and deploying models.  
-  - Built-in support for sensor data.  
-- **Integration**: Web-based interface and CLI tools.  
-- **Best For**: End-to-end benchmarking and deployment on edge devices.
+  ##### **[PyTorch Benchmark Utilities](https://pytorch.org/tutorials/recipes/benchmark.html)**
+  - **Use Case**: Benchmark PyTorch models for speed and memory usage.
+  - **Features**:  
+    - Granular performance tracking with `torch.utils.benchmark`.  
+    - CUDA optimization testing.
+  - **Best For**: Development-phase PyTorch models.
 
-##### **[NVIDIA Jetson Performance Tool (JTOP)](https://github.com/rbonghi/jetson_stats)**
-- **Use Case**: Monitor and benchmark AI workloads on NVIDIA Jetson devices.  
-- **Features**:  
-  - GPU and CPU resource usage tracking.  
-  - Memory, temperature, and power profiling.  
-- **Integration**: Command-line tool for Jetson devices.  
-- **Best For**: Profiling heavy AI models on NVIDIA edge platforms.
+</details>
 
-##### **[ARM Compute Library](https://developer.arm.com/tools-and-software/compute-library)**
-- **Use Case**: Benchmark AI models on ARM processors (e.g., Cortex-M, Cortex-A).  
-- **Features**:  
-  - Optimized for edge inference on ARM architecture.  
-  - Real-time latency and memory profiling.  
-- **Integration**: C++ library with Python bindings.  
-- **Best For**: Models running on ARM-based IoT and mobile devices.
+<details>
+  <summary>2. Edge Devices</summary>
 
-#### **3. Cloud-Based Benchmarking Tools**
-##### **[AWS SageMaker Edge Manager](https://aws.amazon.com/sagemaker/edge/)**
-- **Use Case**: Benchmark, manage, and optimize AI models on edge devices connected to AWS.  
-- **Features**:  
-  - Monitor device performance remotely.  
-  - Deploy models with integrated latency and resource tracking.  
-- **Integration**: AWS ecosystem.  
-- **Best For**: Large-scale edge device deployment and monitoring.
+  ##### **[Edge Impulse](https://www.edgeimpulse.com/)**
+  - **Use Case**: Benchmark models specifically designed for edge devices, including MCUs and constrained hardware.  
+  - **Features**:  
+    - Real-time inference profiling on low-power devices.  
+    - End-to-end platform for training, optimizing, and deploying models.  
+    - Built-in support for sensor data.  
+  - **Integration**: Web-based interface and CLI tools.  
+  - **Best For**: End-to-end benchmarking and deployment on edge devices.
 
-##### **[Google ML Kit](https://developers.google.com/ml-kit)**
-- **Use Case**: Benchmark pre-trained models and custom solutions on Android/iOS devices.  
-- **Features**:  
-  - Lightweight on-device inference profiling.  
-  - Extensive documentation and pre-built APIs for vision tasks.  
-- **Integration**: Android/iOS SDK.  
-- **Best For**: Real-time applications on mobile devices.
+  ##### **[NVIDIA Jetson Performance Tool (JTOP)](https://github.com/rbonghi/jetson_stats)**
+  - **Use Case**: Monitor and benchmark AI workloads on NVIDIA Jetson devices.  
+  - **Features**:  
+    - GPU and CPU resource usage tracking.  
+    - Memory, temperature, and power profiling.  
+  - **Integration**: Command-line tool for Jetson devices.  
+  - **Best For**: Profiling heavy AI models on NVIDIA edge platforms.
+
+  ##### **[ARM Compute Library](https://developer.arm.com/tools-and-software/compute-library)**
+  - **Use Case**: Benchmark AI models on ARM processors (e.g., Cortex-M, Cortex-A).  
+  - **Features**:  
+    - Optimized for edge inference on ARM architecture.  
+    - Real-time latency and memory profiling.  
+  - **Integration**: C++ library with Python bindings.  
+  - **Best For**: Models running on ARM-based IoT and mobile devices.
+
+</details>
+
+<details>
+  <summary>3. Cloud-Based Benchmarking Tools</summary>
+
+  ##### **[AWS SageMaker Edge Manager](https://aws.amazon.com/sagemaker/edge/)**
+  - **Use Case**: Benchmark, manage, and optimize AI models on edge devices connected to AWS.  
+  - **Features**:  
+    - Monitor device performance remotely.  
+    - Deploy models with integrated latency and resource tracking.  
+  - **Integration**: AWS ecosystem.  
+  - **Best For**: Large-scale edge device deployment and monitoring.
+
+  ##### **[Google ML Kit](https://developers.google.com/ml-kit)**
+  - **Use Case**: Benchmark pre-trained models and custom solutions on Android/iOS devices.  
+  - **Features**:  
+    - Lightweight on-device inference profiling.  
+    - Extensive documentation and pre-built APIs for vision tasks.  
+  - **Integration**: Android/iOS SDK.  
+  - **Best For**: Real-time applications on mobile devices.
+
+</details>
+
 
 ## **Best Practices & Considerations**
 
