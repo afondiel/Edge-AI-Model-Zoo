@@ -51,10 +51,11 @@ The table below categorizes some of these models based on their primary capabili
 | Category | Model | Description | Reference |
 |---|---|---|---|
 | **Language** | Whisper | General-purpose speech recognition model | [Whisper on Hugging Face](https://huggingface.co/openai/whisper) |
-| | Baichuan | Large ²language model | [Baichuan on Hugging Face](https://huggingface.co/baichuan-inc/Baichuan-13B-Base) |
+| | Baichuan | Large language model | [Baichuan on Hugging Face](https://huggingface.co/baichuan-inc/Baichuan-13B-Base) |
 | | huggingface_wavlm_base_plus | Audio language model for speech recognition | [WavLM on Hugging Face](https://huggingface.co/microsoft/wavlm-base-plus) |
 | | whisper_asr | Speech recognition model | [Whisper ASR on GitHub](https://github.com/openai/whisper) |
 | | trocr | Text recognition in images | [TrOCR on Hugging Face](https://huggingface.co/microsoft/trocr-base) |
+| |MobileLLM | Large language model | [MobileLLM on Hugging Face](https://huggingface.co/collections/facebook/mobilellm-6722be18cb86c20ebe113e95)|
 | **Audio** | Whisper | Speech-to-text | [Whisper on Hugging Face](https://huggingface.co/openai/whisper) |
 | | huggingface_wavlm_base_plus | Audio language model for speech recognition | [WavLM on Hugging Face](https://huggingface.co/microsoft/wavlm-base-plus) |
 | | whisper_asr | Speech recognition model | [Whisper ASR on GitHub](https://github.com/openai/whisper) |
