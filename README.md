@@ -114,10 +114,6 @@ The table below categorizes some of these models based on their primary capabili
 | | stabilityai | Various models | Hugging Face [invalid URL removed] |
 | | upstage | Various models | Hugging Face [invalid URL removed] |
 | | ybelkada | Various models | Hugging Face [invalid URL removed] |
-|**Generative AI**|||
-|**AGI**|||
-||||
-
 
 ## Resources
 
