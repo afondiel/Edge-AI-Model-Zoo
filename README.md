@@ -122,14 +122,15 @@ The table below categorizes some of these models based on their primary capabili
 **Model Evaluation & Benchmarking**: 
 - **[Model Evaluation & Benchmarking Guide](./model-eval-benchmarking-guide.md)**
 
-**Edge-AI-Platforms:**
-- [Edge-AI Platform List](https://github.com/afondiel/Edge-AI-Platforms)
+**Edge-AI Hardware Platforms:**
+- [Edge-AI Hardware Platform List](https://github.com/afondiel/Edge-AI-Platforms)
 - [NVIDIA Jetson Orin Nano announcement](https://blogs.nvidia.com/blog/jetson-generative-ai-supercomputer/)
 
-**Deployment Frameworks/Toolkits**
-- [TensorFlow Lite](https://www.tensorflow.org/lite)
+**Deployment Frameworks/Toolkits/Platforms**
+- [LiteRT (formerly TensorFlow Lite)](https://www.tensorflow.org/lite)
     - [TFLite Model Maker](https://www.tensorflow.org/lite/models/modify/model_maker)
 - [Core ML](https://developer.apple.com/documentation/coreml)
+- [Pytorch Edge](https://pytorch.org/edge)
 - [ONNX Runtime](https://onnxruntime.ai/)
 - [TensorRT](https://developer.nvidia.com/tensorrt)
 - [OpenVINO Toolkit](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html)
@@ -140,9 +141,6 @@ The table below categorizes some of these models based on their primary capabili
 - [Apache TVM](https://tvm.apache.org/)
 - [MLIR](https://mlir.llvm.org/)
 - [NVIDIA Triton Inference Server](https://developer.nvidia.com/nvidia-triton-inference-server)
-
-**AI Platforms:**
-- [Edge Impulse](https://edgeimpulse.com)
 
 **Companies developing AI solutions at the Edge**
 
@@ -168,6 +166,7 @@ The table below categorizes some of these models based on their primary capabili
 - [Baidu AI Open Model Zoo](https://ai.baidu.com/tech/modelzoo)
 - [Alibaba Cloud AI Model Marketplace](https://www.alibabacloud.com/solutions/ai)
 - [Tencent AI Open Platform](https://ai.qq.com/)
+- [HAILO](https://hailo.ai/)
 
 **Developer Resources**
 
