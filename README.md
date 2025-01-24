@@ -4,7 +4,7 @@
 
 ## Overview
 
-There are up to **hundreds** of optimized pre-trained models for on-device ready-to-deploy, available in AI platform hubs like Hugging Face, GitHub Model Zoos, TensorFlow & PyTorch Hub, and more.
+A curated list of pre-trained and ready-to-deploy models optimized for on-device/edge devices, available on AI hubs such as Hugging Face, GitHub Model Zoos, TensorFlow Hub, PyTorch Hub, and more.
 
 ## Table of Contents
 - [Overview](#overview)
