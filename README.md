@@ -17,24 +17,24 @@ A curated list of pre-trained and ready-to-deploy models optimized for on-device
 [Back to Table of Contents](#table-of-contents)
 
 | Model Zoo | Description | Links |
-|-----------|-------------|------|
+|------------------------|---------------------------------------------------------------------|----------------------------------------------------|
 | Edge AI Labs Model Zoo | A collection of pre-trained, optimized models for low-power devices.| [EdgeAI Labs](https://edgeai.modelnova.ai/models/) |
 | Edge Impulse Model Zoo | A repository of models optimized for edge devices. | [Edge Impulse Model Zoo](https://www.edgeimpulse.com/) |
+| ONNX Model Zoo | A collection of pre-trained, state-of-the-art models in the ONNX format. | [ONNX Model Zoo](https://github.com/onnx/models) |
+| NVIDIA Pretrained AI Models (NGC + TAO)| Accelerate AI development with world-class customizable pretrained models from NVIDIA. | - [NVIDIA Pretrained AI Models - Main](https://developer.nvidia.com/ai-models) <br> - [NGC Model Catalog](https://catalog.ngc.nvidia.com/models?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=) <br> -  [TAO Model Zoo](https://docs.nvidia.com/tao/tao-toolkit/text/model_zoo/overview.html)|
 | OpenVINO Model Zoo | A collection of pre-trained models ready for use with Intel's OpenVINO toolkit. | [OpenVINO Model Zoo](https://github.com/openvinotoolkit/open_model_zoo) |
+| Qualcomm Models Zoo | A collection of AI models from Qualcomm. | [Qualcomm Models Zoo](https://github.com/quic/ai-hub-models/) |
 | LiteRT Pre-trained models | Pre-trained models optimized for Google's Lite Runtime. | [LiteRT Pre-trained Models](https://ai.google.dev/edge/litert/models/trained) |
 | Keras Applications | Pre-trained models for Keras applications| [Keras Pre-trained Models](https://keras.io/api/applications/#available-models) |
-| Qualcomm Models Zoo | A collection of AI models from Qualcomm. | [Qualcomm Models Zoo](https://github.com/quic/ai-hub-models/) |
+| MediaPipe | Framework for building multimodal applied machine learning pipelines. | [MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/guide) |
+| TensorFlow Model Garden | A repository with a collection of TensorFlow models. | [TensorFlow Model Garden](https://github.com/tensorflow/models/tree/master) |
+| Pytorch Model Zoo | A hub for pre-trained models on PyTorch framework. | [Pytorch Model Zoo](https://pytorch.org/serve/model_zoo.html) |
 | stm32ai-modelzoo | AI Model Zoo for STM32 microcontroller devices. | [stm32ai-modelzoo](https://github.com/STMicroelectronics/stm32ai-modelzoo/) |
 | Model Zoo | A collection of pre-trained models for various machine learning tasks. | [Model Zoo](https://modelzoo.co/) |
 | Hugging Face Models| A collection of pre-trained models for various machine learning tasks. | [Hugging Face Models](https://huggingface.co/models) |
 | Papers with Code | A repository that links academic papers to their respective code and models. | [Papers with Code](https://paperswithcode.com/) |
-| ONNX Model Zoo | A collection of pre-trained, state-of-the-art models in the ONNX format. | [ONNX Model Zoo](https://github.com/onnx/models) |
-| TensorFlow Model Garden | A repository with a collection of TensorFlow models. | [TensorFlow Model Garden](https://github.com/tensorflow/models/tree/master) |
-| MediaPipe | Framework for building multimodal applied machine learning pipelines. | [MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/guide) |
-| Pytorch Model Zoo | A hub for pre-trained models on PyTorch framework. | [Pytorch Model Zoo](https://pytorch.org/serve/model_zoo.html) |
 | MXNet Model Zoo | A collection of pre-trained models for the Apache MXNet framework. | [MXNet Model Zoo](https://mxnet.apache.org/versions/1.1.0/model_zoo/index.html) |
 | Deci’s Model Zoo | A curated list of high-performance deep learning models. | [Deci’s Model Zoo](https://deci.ai/modelzoo/) |
-| NVIDIA Pretrained AI Models | Accelerate AI development with world-class customizable pretrained models from NVIDIA. | [NVIDIA Pretrained AI Models](https://developer.nvidia.com/ai-models) |
 | Jetson Model Zoo and Community Projects | NVIDIA's collection of models and projects for Jetson platform. | [Jetson Model Zoo and Community Projects](https://developer.nvidia.com/embedded/community/jetson-projects) |
 | Magenta | Models for music and art generation from Google's Magenta project. | [Magenta](https://github.com/magenta/magenta/tree/main/magenta/models/arbitrary_image_stylization) |
 | Awesome-CoreML-Models Public | A collection of CoreML models for iOS developers. | [Awesome-CoreML-Models Public](https://github.com/likedan/Awesome-CoreML-Models) |
