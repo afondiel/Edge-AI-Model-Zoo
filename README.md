@@ -1,18 +1,32 @@
-[![](https://img.shields.io/badge/Contribute-Welcome-green)](./CONTRIBUTING.md)
+[!](./CONTRIBUTING.md)
 
 # Edge-AI Model Zoo
 
-## Overview
-
-A curated list of pre-trained and ready-to-deploy models optimized for on-device/edge devices, available on AI hubs such as Hugging Face, GitHub Model Zoos, TensorFlow Hub, PyTorch Hub, and more.
+A curated list of pre-trained, ready-to-deploy models optimized for edge devices, sourced from AI hubs like Hugging Face, GitHub, TensorFlow Hub, PyTorch Hub, and more.
 
 ## Table of Contents
-- [Overview](#overview)
-- [Model Zoo](#model-zoo)
-- [Model Applications](#model-applications)
+- [Finding the Perfect Edge AI Model for Your Application](#finding-the-perfect-edge-ai-model-for-your-application)
+- [Model Zoos](#model-zoos)
+- [Real-World Uses for Edge AI Models](#real-world-uses-for-edge-ai-models)
 - [Resources](#resources)
 
-## Model Zoo
+## Finding the Perfect Edge AI Model for Your Application
+Selecting the right model for edge deployment is critical for balancing performance, efficiency, and resource constraints. Here’s a quick guide for edge AI developers, practitioners, and industry experts:
+
+### Why It Matters
+- **Efficiency**: Edge devices (e.g., IoT, mobile, embedded systems) have limited compute, memory, and power.
+- **Performance**: Real-time applications (e.g., autonomous drones, smart cameras) demand low latency and high accuracy.
+- **Scalability**: The right model ensures cost-effective deployment across devices.
+
+### Key Criteria
+1. **Task Requirements**: Match the model to your application (e.g., vision, audio, multimodal).
+2. **Hardware Constraints**: Consider compute (OPS), memory (MB), and energy (mWh) limits of your device.
+3. **Performance Goals**: Balance accuracy, latency, and throughput for your use case.
+4. **Deployment Ease**: Check compatibility with frameworks (e.g., TensorFlow Lite, ONNX).
+
+**Next Steps**: Once you’ve shortlisted a model, use the [Model Evaluation & Benchmarking Guide](./model-eval-benchmarking-guide.md) to profile and optimize it.
+
+## Model Zoos
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -42,7 +56,7 @@ A curated list of pre-trained and ready-to-deploy models optimized for on-device
 | Baidu AI Open Model Zoo | Baidu's collection of AI models. | [Baidu AI Open Model Zoo](https://ai.baidu.com/tech/modelzoo) |
 | Hailo Model Zoo | A set of models optimized for Hailo's AI processors. | [Hailo Model Zoo](https://github.com/hailo-ai/hailo_model_zoo) |
 
-## Model Applications
+## Real-World Uses for Edge AI Models
 
 [Back to Table of Contents](#table-of-contents)
 
