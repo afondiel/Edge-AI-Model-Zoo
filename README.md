@@ -1,4 +1,4 @@
-[!](./CONTRIBUTING.md)
+[![](https://img.shields.io/badge/Contribute-Welcome-green)](./CONTRIBUTING.md)
 
 # Edge-AI Model Zoo
 
@@ -197,9 +197,6 @@ The table below categorizes some of these models based on their primary capabili
 - https://www.hackster.io/sandeep-mistry/nvidia-tao-object-detection-ml-models-on-arm-based-devices-3e51fb/
 - https://blog.st.com/tao-toolkit/
 
-[Back to Table of Contents](#table-of-contents)
-
-
 **Blogs:**
 - [13 Free Resources and Model Zoos for Deep Learning and Computer Vision Models](https://www.edge-ai-vision.com/2022/04/13-free-resources-and-model-zoos-for-deep-learning-and-computer-vision-models/)
 - [LiteRT Models](https://ai.google.dev/edge/litert/models/trained)
@@ -207,3 +204,5 @@ The table below categorizes some of these models based on their primary capabili
 - [Hugging Face Computer Vision Course](https://huggingface.co/learn/computer-vision-course/unit9/intro_to_model_optimization)
 - [Apple Foundation Models](https://machinelearning.apple.com/research/introducing-apple-foundation-models)
 - [MediaTek Integrates NVIDIA TAO ToolKit with NeuroPilot SDK for Accelerated Development of Edge AI Applications in IoT](https://corp.mediatek.com/news-events/press-releases/mediatek-integrates-nvidia-tao-toolkit-with-neuropilot-sdk-for-accelerated-development-of-edge-ai-applications-in-iot)
+
+[Back to Table of Contents](#table-of-contents)
