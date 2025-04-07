@@ -1,52 +1,50 @@
-# **Benchmarking and Optimization Playbook**
+# Model Benchmarking, Profiling and Optimization Guide
 
-## **Overview**
-
-This guideline provides a comprehensive framework for selecting a suitable machine learning model tailored to Edge devices based on hardware platforms and real-world applications.
-
+This guide walks you through benchmarking, profiling, and optimizing edge AI models to ensure they meet your application’s performance needs. It’s designed for users who’ve selected a model from the [Edge-AI Model Zoo README](../README.md) and want to evaluate and enhance it.
 
 ## Table of Contents
-
 - [Overview](#overview)
-- [Benchmarking: Target HW Platform Profiling](#benchmarking-target-hw-platform-profiling)
-- [Benchmarking: Target Model Profiling](#benchmarking-target-model-profiling)
-- [Best Practices & Considerations](#best-practices--considerations)
-- [Practical Steps for Optimization](#practical-steps-for-optimization)
+- [Step 1: Benchmark Your Model](#step-1-benchmark-your-model)
+- [Step 2: Profile and Identify Bottlenecks](#step-2-profile-and-identify-bottlenecks)
+- [Step 3: Optimize and Compare](#step-3-optimize-and-compare)
+- [Tools and Frameworks](#tools-and-frameworks)
+- [Resources](#resources)
 
+## Overview
 
-## **Benchmarking: Target HW Platform Profiling**
+```mermaid
+   graph LR
+       A[Choose Model] --> B[Benchmark]
+       B --> C[Profile]
+       C --> D[Optimize]
+       D --> E[Compare]
+```
 
-Selecting the right edge device is crucial for the overall performance and efficiency of your application. Below is a performance template to help guide you in choosing the appropriate edge platform based on your application requirements (e.g., computational demands, environmental conditions, operational constraints, etc.). Here’s a practical [example](https://github.com/afondiel/Edge-AI-Platforms).
+## Step 1: Benchmark Your Model
+Evaluate your model’s baseline performance on your target edge device.
 
+### Key Metrics
+- **Latency (ms)**: Time per inference.
+- **Throughput (inf/s)**: Inferences per second.
+- **Memory Usage (MB)**: RAM and storage footprint.
+- **Energy (mWh)**: Power consumption.
 
-| **Target Device**       | **Model Specs**     | **Accuracy (%)** | **Latency (ms)** | **Throughput (inf/s)** | **Memory Usage (RAM)** | **Energy (mWh)** | **Startup Time (ms)** | **Temperature (°C)** | **Complexity (OPS)** | **Compute Speed (MHz/GHz)** | **Deployment Time (s)** |
-|--------------------------------|---------------------|------------------|------------------|------------------------|------------------------|------------------|------------------------|----------------------|--------------------------|-----------------------------|--------------------------|
-| **System on Chips (SoCs)**     | Size (MB)           | %                | ms               | Inferences/sec         | MB                    | mWh              | ms                     | °C                   | GFlops                  | MHz/GHz                    | s                        |
-| **Microcontrollers (MCUs)**    | Size (KB)           | %                | ms               | Inferences/sec         | KB                    | mWh              | ms                     | °C                   | GFlops                  | MHz                       | s                        |
-| **Field-Programmable Gate Arrays (FPGAs)** | Size (MB) | %                | µs/ms            | Inferences/sec         | MB                    | mWh              | ms                     | °C                   | GFlops                  | MHz                       | s                        |
-| **Edge AI Boxes and Gateways** | Size (MB/GB)        | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | MHz/GHz                    | s                        |
-| **Mobile and Embedded Devices** | Size (MB/GB)       | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
-| **Specialized Edge Devices**   | Size (MB/GB)        | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
-| **Industrial and Custom Edge Devices** | Size (MB/GB) | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
-| **Robotics-Focused Edge Devices** | Size (MB/GB)     | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
+### Example
+```python
+# Benchmark latency with TensorFlow Lite
+import tensorflow as tf
+import time
 
-### **Rule of Thumb**
-- **Small Devices (e.g., IoT sensors)**: Use the smallest model with acceptable accuracy.
-- **Mid-Power Devices (e.g., drones, edge servers)**: Prefer low-resolution models with moderate complexity.
-- **High-Critical Applications (e.g., autonomous vehicles)**: Prioritize models balancing accuracy and latency.
+interpreter = tf.lite.Interpreter(model_path="model.tflite")
+interpreter.allocate_tensors()
+input_details = interpreter.get_input_details()
+output_details = interpreter.get_output_details()
 
-
-## **Benchmarking: Target Model Profiling**
-
-Here, the goal is to analyze the model performance to identify bottlenecks and optimize its execution time and memory usage to meet the real-time application requirements.
-
-### **How It Works**
-
-1. **Download and Evaluate**: Test the model on a standardized dataset (e.g., ImageNet, COCO).
-2. **Measure Performance**:  
-   - Use tools like ONNX Runtime, TensorFlow Lite Benchmark Tool, or CoreML Profiler.  
-   - Test latency on edge devices (e.g., Raspberry Pi, Jetson Nano).
-
+start_time = time.time()
+interpreter.invoke()
+latency = (time.time() - start_time) * 1000  # ms
+print(f"Latency: {latency:.2f} ms")
+```
 - Predict and benchmark `throughput` using [tensorflow](https://www.tensorflow.org/):
 ```python
 # Predict and benchmark throughput using tensorflow
@@ -100,12 +98,40 @@ def show_predictions(model):
   plt.title(decode_predictions(preds, top=3)[0][0][1])
 ```
 
+### Choose Your Target HardWare Platform carefully**
+
+Selecting the right edge device is crucial for the overall performance and efficiency of your application. Below is a performance template to help guide you in choosing the appropriate edge platform based on your application requirements (e.g., computational demands, environmental conditions, operational constraints, etc.). Here’s a practical [example](https://github.com/afondiel/Edge-AI-Platforms).
 
 
-3. **Document Results**: Log metrics in a benchmark table.
-4. **Submit with PR**: Attach benchmark results to your pull request.
+| **Target Device**       | **Model Specs**     | **Accuracy (%)** | **Latency (ms)** | **Throughput (inf/s)** | **Memory Usage (RAM)** | **Energy (mWh)** | **Startup Time (ms)** | **Temperature (°C)** | **Complexity (OPS)** | **Compute Speed (MHz/GHz)** | **Deployment Time (s)** |
+|--------------------------------|---------------------|------------------|------------------|------------------------|------------------------|------------------|------------------------|----------------------|--------------------------|-----------------------------|--------------------------|
+| **System on Chips (SoCs)**     | Size (MB)           | %                | ms               | Inferences/sec         | MB                    | mWh              | ms                     | °C                   | GFlops                  | MHz/GHz                    | s                        |
+| **Microcontrollers (MCUs)**    | Size (KB)           | %                | ms               | Inferences/sec         | KB                    | mWh              | ms                     | °C                   | GFlops                  | MHz                       | s                        |
+| **Field-Programmable Gate Arrays (FPGAs)** | Size (MB) | %                | µs/ms            | Inferences/sec         | MB                    | mWh              | ms                     | °C                   | GFlops                  | MHz                       | s                        |
+| **Edge AI Boxes and Gateways** | Size (MB/GB)        | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | MHz/GHz                    | s                        |
+| **Mobile and Embedded Devices** | Size (MB/GB)       | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
+| **Specialized Edge Devices**   | Size (MB/GB)        | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
+| **Industrial and Custom Edge Devices** | Size (MB/GB) | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
+| **Robotics-Focused Edge Devices** | Size (MB/GB)     | %                | ms               | Inferences/sec         | MB/GB                 | mWh/W            | ms                     | °C                   | GFlops                  | GHz                       | s                        |
 
-### **Benchmark Table Example**
+### **Rule of Thumb**
+- **Small Devices (e.g., IoT sensors)**: Use the smallest model with acceptable accuracy.
+- **Mid-Power Devices (e.g., drones, edge servers)**: Prefer low-resolution models with moderate complexity.
+- **High-Critical Applications (e.g., autonomous vehicles)**: Prioritize models balancing accuracy and latency.
+
+## Step 2: Profile and Identify Bottlenecks
+
+Analyze where your model spends time and resources.
+
+Here, the goal is to analyze the model performance to identify bottlenecks and optimize its execution time and memory usage to meet the real-time application requirements.
+
+### Tools
+
+- **TensorFlow Lite Benchmark Tool**: Measures latency and memory on mobile devices.
+- **ONNX Runtime Profiler**: Profiles layer-wise performance.
+- **NVIDIA JTOP**: Monitors Jetson device resources.
+
+### **Profiling Metrics Examples**
 
 **Short version**:
 
@@ -139,9 +165,23 @@ Depth counts the number of layers with parameters.
 (Source: [Keras Applications](https://keras.io/api/applications/))
 
 
-### **Benchmarking Tools**
+## Step 3: Optimize and Compare
+Apply optimizations and compare performance before and after.
 
-## **Benchmarking Tools**
+### Optimization Techniques
+1. **Quantization**: Reduce precision (e.g., FP32 → INT8).
+2. **Pruning**: Remove unnecessary weights.
+3. **Layer Fusion**: Combine operations for efficiency.
+
+### Example Comparison
+| Metric | Before | After (Quantized) |
+|--------|--------|-------------------|
+| Latency (ms) | 25 | 18 |
+| Model Size (MB) | 4.3 | 1.2 |
+| Accuracy (%) | 72 | 70 |
+
+
+## **Tools & Frameworks**
 
 <details>
   <summary>1. General-Purpose Tools</summary>
@@ -220,8 +260,7 @@ Depth counts the number of layers with parameters.
 
 </details>
 
-
-## **Best Practices & Considerations**
+## **Pro Tips**
 
 ### Model Evaluation:
 - **Target Metrics First**: Define critical metrics like latency, memory footprint, or accuracy based on the application.  
@@ -235,14 +274,24 @@ Depth counts the number of layers with parameters.
 - **Underestimating Deployment Complexity**: Ensure the model integrates seamlessly with existing frameworks and workflows.  
 - **Ignoring Edge-Specific Tools**: Generic tools might not capture nuances of edge environments. Leverage specialized tools for accurate profiling.  
 
-### Some Real-Life Use Cases:
-- **Autonomous Drones**: EfficientNet-lite quantized to INT8 for low-latency object detection.  
-- **IoT Sensors**: TinyML model for temperature anomaly detection on Cortex-M MCUs.  
-- **Retail Analytics**: MobileNet V3 for real-time customer tracking on Android edge devices.  
-
-## **Practical Steps for Optimization**
+### **Practical Steps for Optimization**
 1. **Benchmark Models**: Evaluate latency, memory usage, and energy efficiency on target edge hardware.
 2. **Choose Lightweight Architectures**: Use models like MobileNet, EfficientNet-Lite, or low-resolution versions of larger models.
 3. **Quantize Models**: Convert models to INT8 or lower precision to reduce size and computation.
 4. **Simulate Edge Scenarios**: Test models under realistic conditions (e.g., low power, intermittent connectivity).
 5. **Optimize Pipelines**: Employ pruning, knowledge distillation, or layer fusion to enhance performance.
+
+### Iterate
+- Test on real hardware, not just simulators.
+- Use representative datasets for accurate benchmarking.
+- Iterate: Optimize incrementally and re-benchmark.
+
+## Resources
+- **Benchmarking Tools**:
+   - [TensorFlow Lite](https://www.tensorflow.org/lite/performance/measurement)
+   - [ONNX Runtime](https://onnxruntime.ai/)
+- **Hardware Profiling**:
+   - [Qualcomm Profiler](https://www.qualcomm.com/developer/software/qualcomm-profiler)
+   - [Edge Impulse](https://www.edgeimpulse.com/)
+   - [Geekbench - a cross-platform benchmark that measures your system's performance](https://www.geekbench.com/)
+- **Optimization Guides**: [Hugging Face Optimization](https://huggingface.co/docs/transformers/performance)
