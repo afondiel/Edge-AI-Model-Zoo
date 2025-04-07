@@ -1,4 +1,4 @@
-# **Model Evaluation & Benchmarking Guide**
+# **Benchmarking and Optimization Playbook**
 
 ## **Overview**
 
@@ -8,60 +8,10 @@ This guideline provides a comprehensive framework for selecting a suitable machi
 ## Table of Contents
 
 - [Overview](#overview)
-- [Evaluation Criteria & Key Metrics](#evaluation-criteria--key-metrics)
-  - [1. Computational Efficiency](#1-computational-efficiency)
-  - [2. Model Size](#2-model-size)
-  - [3. Memory Footprint](#3-memory-footprint)
-  - [4. Resolution vs. Performance Trade-off](#4-resolution-vs-performance-trade-off)
-  - [5. Latency and Real-Time Capability](#5-latency-and-real-time-capability)
-  - [6. Energy Efficiency](#6-energy-efficiency)
-  - [7. Deployment Constraints](#7-deployment-constraints)
-  - [8. Accuracy vs. Resource Trade-Off](#8-accuracy-vs-resource-trade-off)
 - [Benchmarking: Target HW Platform Profiling](#benchmarking-target-hw-platform-profiling)
 - [Benchmarking: Target Model Profiling](#benchmarking-target-model-profiling)
 - [Best Practices & Considerations](#best-practices--considerations)
 - [Practical Steps for Optimization](#practical-steps-for-optimization)
-
-
-
-## **Evaluation Criteria & Key Metrics**
-
-When choosing a machine learning model for edge devices (e.g., Mobiles, IoT devices, embedded systems), consider these key factors:
-
-### **1. Computational Efficiency**
-- **Key Metric**: **Operations Per Second (OPS)**  
-  - Opt for models with low OPS to minimize latency and power consumption, particularly on CPUs.
-  - This is critical for real-time applications like object detection or pose estimation.
-
-### **2. Model Size**
-- **Key Metric**: **Model Size (MB)**  
-  - Smaller models reduce memory and storage demands, enabling deployment on resource-constrained devices.
-  - Compact models are ideal for scenarios requiring frequent updates or over-the-air (OTA) deployments.
-
-### **3. Memory Footprint**
-- **Key Metric**: **Parameters (M)**  
-  - Models with fewer parameters consume less memory during inference, essential for devices with limited RAM.
-  - Excessive parameters can lead to slower CPU performance.
-
-### **4. Resolution vs. Performance Trade-off**
-- **Key Metric**: **Input Resolution**  
-  - Higher resolutions improve accuracy but require more computational resources.
-  - For edge devices, prefer low-resolution models unless high accuracy is indispensable.
-
-### **5. Latency and Real-Time Capability**
-- Low-latency predictions are crucial for real-time applications such as autonomous vehicles, surveillance, and robotics.
-- Benchmark models under expected workloads to ensure acceptable response times.
-
-### **6. Energy Efficiency**
-- For battery-powered or energy-constrained devices, prioritize models with low OPS and reduced computational overhead.
-
-### **7. Deployment Constraints**
-- **Device Constraints**: Consider the CPU architecture, memory, storage, and thermal limitations of the device.
-- **Framework Compatibility**: Ensure compatibility with frameworks like TensorFlow Lite, ONNX, or OpenVINO.
-
-### **8. Accuracy vs. Resource Trade-Off**
-- Select models that balance acceptable accuracy with edge resource limitations.
-- Benchmark multiple models to meet the target application's accuracy requirements.
 
 
 ## **Benchmarking: Target HW Platform Profiling**
