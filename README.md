@@ -24,7 +24,7 @@ Selecting the right model for edge deployment is critical for balancing performa
 3. **Performance Goals**: Balance accuracy, latency, and throughput for your use case.
 4. **Deployment Ease**: Check compatibility with frameworks (e.g., TensorFlow Lite, ONNX).
 
-**Next Steps**: Once you’ve shortlisted a model, use the [Model Evaluation & Benchmarking Guide](./model-eval-benchmarking-guide.md) to profile and optimize it.
+**Next Steps**: Once you’ve shortlisted a model, use the [Model Benchmarking, Profiling and Optimization Guide](./model-bench-prof-opt-guide.md) to profile and optimize it.
 
 ## Model Zoos
 
