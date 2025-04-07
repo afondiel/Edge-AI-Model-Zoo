@@ -98,7 +98,7 @@ def show_predictions(model):
   plt.title(decode_predictions(preds, top=3)[0][0][1])
 ```
 
-### Choose Your Target HardWare Platform carefully**
+### Choose Your Target Edge Platform carefully
 
 Selecting the right edge device is crucial for the overall performance and efficiency of your application. Below is a performance template to help guide you in choosing the appropriate edge platform based on your application requirements (e.g., computational demands, environmental conditions, operational constraints, etc.). Here’s a practical [example](https://github.com/afondiel/Edge-AI-Platforms).
 
@@ -181,7 +181,7 @@ Apply optimizations and compare performance before and after.
 | Accuracy (%) | 72 | 70 |
 
 
-## **Tools & Frameworks**
+## **Tools and Frameworks**
 
 <details>
   <summary>1. General-Purpose Tools</summary>
