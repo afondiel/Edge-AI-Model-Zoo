@@ -1,6 +1,6 @@
 # Model Benchmarking, Profiling and Optimization Guide
 
-This guide walks you through benchmarking, profiling, and optimizing edge AI models to ensure they meet your application’s performance needs. It’s designed for users who’ve selected a model from the [Edge-AI-Model-Zoo/README.md](../README.md) and want to evaluate and enhance it.
+This guide walks you through benchmarking, profiling, and optimizing edge AI models to ensure they meet your application’s performance needs. It’s designed for users who’ve selected a model from the [Edge-AI-Model-Zoo/README.md](./README.md) and want to evaluate and enhance it.
 
 ## Table of Contents
 - [Workflow](#workflow)
