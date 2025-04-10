@@ -1,16 +1,16 @@
 # Model Benchmarking, Profiling and Optimization Guide
 
-This guide walks you through benchmarking, profiling, and optimizing edge AI models to ensure they meet your application’s performance needs. It’s designed for users who’ve selected a model from the [Edge-AI Model Zoo README](../README.md) and want to evaluate and enhance it.
+This guide walks you through benchmarking, profiling, and optimizing edge AI models to ensure they meet your application’s performance needs. It’s designed for users who’ve selected a model from the [Edge-AI-Model-Zoo/README.md](../README.md) and want to evaluate and enhance it.
 
 ## Table of Contents
-- [Overview](#overview)
+- [Workflow](#workflow)
 - [Step 1: Benchmark Your Model](#step-1-benchmark-your-model)
 - [Step 2: Profile and Identify Bottlenecks](#step-2-profile-and-identify-bottlenecks)
 - [Step 3: Optimize and Compare](#step-3-optimize-and-compare)
 - [Tools and Frameworks](#tools-and-frameworks)
 - [Resources](#resources)
 
-## Overview
+## Workflow
 
 ```mermaid
    graph LR
