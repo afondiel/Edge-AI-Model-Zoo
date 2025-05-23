@@ -11,7 +11,7 @@ This guide walks you through **benchmarking** and **profiling** AI models to str
 - [Step 3: Deploy](#step-3-deploy)
 - [Step 4: Profile and Identify Bottlenecks](#step-4-profile-and-identify-bottlenecks)
 - [Step 5: Optimize](#step-5-optimize)
-- [Step 6: Iteration](#step-6-iteration)
+- [Step 6: Iterate](#step-6-iterate)
 - [Resources](#resources)
 
 ## Bench Workflow
@@ -24,6 +24,7 @@ This guide walks you through **benchmarking** and **profiling** AI models to str
        D-->E[Profile]
        E-->F[Optimize]
        F-->G[Iterate]
+       G-->A
 ```
 > [!IMPORTANT]  
 > If you already have your application requirements in hand, make sure to follow along each phase of the workflow.
@@ -167,7 +168,7 @@ Use the profiling tools provided by your inference framework (Onnx runtime, Lite
 - **[NVIDIA Jetson Performance Tool (JTOP)](https://github.com/rbonghi/jetson_stats)**: Monitor and benchmark AI workloads on NVIDIA Jetson devices.
 - **[PyTorch Benchmark Utilities](https://pytorch.org/tutorials/recipes/benchmark.html)**: Benchmark PyTorch models for speed and memory usage.
 -  **[Edge Impulse](https://www.edgeimpulse.com/)**: End-to-end benchmarking and deployment on edge devices.
-- **[Qualcomm Profiler](https://www.qualcomm.com/developer/software/qualcomm-profiler)**: a system-wide performance profiling tool designed to visualize system performance and identify optimization 
+- **[Qualcomm Profiler](https://www.qualcomm.com/developer/software/qualcomm-profiler)**: a system-wide tool designed to visualize system performance and identify optimization. 
 - **[Geekbench](https://www.geekbench.com/)**: a cross-platform benchmark that measures your system's performance
 - **[ARM Compute Library](https://developer.arm.com/tools-and-software/compute-library)**:Benchmark AI models on ARM processors (e.g., Cortex-M, Cortex-A).  
 - **[AWS SageMaker Edge Manager](https://aws.amazon.com/sagemaker/edge/)**: Benchmark, manage, and optimize AI models on edge devices connected to AWS.
@@ -255,7 +256,7 @@ Use the profiling tools provided by your inference framework (Onnx runtime, Lite
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-<td>
+      <td>-</td>
     </tr>
     <tr>
       <td>ResNet50</td>
@@ -271,7 +272,7 @@ Use the profiling tools provided by your inference framework (Onnx runtime, Lite
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-<td>
+      <td>-</td>
     </tr>
   </tbody>
 </table>
@@ -347,7 +348,7 @@ For example, if you decide to use Quantization, reducing the model precision fro
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td rowspan="3">MCU, Pi, Jetson Nano<td>
+      <td rowspan="3">MCU, Pi, Jetson Nano</td>
     </tr>
     <tr>
       <td>INT8 (Quantized)</td>
@@ -365,7 +366,7 @@ For example, if you decide to use Quantization, reducing the model precision fro
   </tbody>
 </table>
 
-## Step 6: Iteration
+## Step 6: Iterate
 - Test on real hardware, not just simulators.
 - Use representative datasets for accurate benchmarking.
 - Iterate: Optimize incrementally and re-benchmark.
