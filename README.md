@@ -1,32 +1,17 @@
 [![](https://img.shields.io/badge/Contribute-Welcome-green)](./CONTRIBUTING.md)
 
-# Edge-AI Model Zoo
+# Edge-AI Model Zoos
 
-A curated list of pre-trained, ready-to-deploy models optimized for edge devices, sourced from AI hubs like Hugging Face, GitHub, TensorFlow Hub, PyTorch Hub, and more.
+A curated list of Model Zoos & Hubs where you can find production-ready and optimized models for resource-constrained devices.
 
 ## Table of Contents
-- [Finding the Perfect Edge AI Model for Your Application](#finding-the-perfect-edge-ai-model-for-your-application)
-- [Model Zoos](#model-zoos)
-- [Real-World Uses for Edge AI Models](#real-world-uses-for-edge-ai-models)
+- [Model Zoos & Hubs](#model-zoos--hubs)
+- [Model by Application: Use Cases](#model-by-application-use-cases)
 - [Resources](#resources)
+    - [How to choose the best model for Edge AI application](#how-to-choose-the-best-model-for-edge-ai-application)
+    - [Edge AI Technical Guide for Developers and Practitioners](#edge-ai-technical-guide-for-developers-and-practitioners)
 
-## Finding the Perfect Edge AI Model for Your Application
-Selecting the right model for edge deployment is critical for balancing performance, efficiency, and resource constraints. Here’s a quick guide for edge AI developers, practitioners, and industry experts:
-
-### Why It Matters
-- **Efficiency**: Edge devices (e.g., IoT, mobile, embedded systems) have limited compute, memory, and power.
-- **Performance**: Real-time applications (e.g., autonomous drones, smart cameras) demand low latency and high accuracy.
-- **Scalability**: The right model ensures cost-effective deployment across devices.
-
-### Key Criteria
-1. **Task Requirements**: Match the model to your application (e.g., vision, audio, multimodal).
-2. **Hardware Constraints**: Consider compute (OPS), memory (MB), and energy (mWh) limits of your device.
-3. **Performance Goals**: Balance accuracy, latency, and throughput for your use case.
-4. **Deployment Ease**: Check compatibility with frameworks (e.g., TensorFlow Lite, ONNX).
-
-**Next Steps**: Once you’ve shortlisted a model, use the [Model Benchmarking, Profiling and Optimization Guide](./model-bench-prof-opt-guide.md) to profile and optimize it.
-
-## Model Zoos
+## Model Zoos & Hubs
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -56,92 +41,487 @@ Selecting the right model for edge deployment is critical for balancing performa
 | Baidu AI Open Model Zoo | Baidu's collection of AI models. | [Baidu AI Open Model Zoo](https://ai.baidu.com/tech/modelzoo) |
 | Hailo Model Zoo | A set of models optimized for Hailo's AI processors. | [Hailo Model Zoo](https://github.com/hailo-ai/hailo_model_zoo) |
 
-## Real-World Uses for Edge AI Models
+## Model by Application: Use Cases
 
 [Back to Table of Contents](#table-of-contents)
 
-The table below categorizes some of these models based on their primary capabilities for real-world applications:
+Models categorized by tasks and capabilities for real-world applications.
 
-| Category | Model | Description | Reference |
-|---|---|---|---|
-| **Language** | Whisper | General-purpose speech recognition model | [Whisper on Hugging Face](https://huggingface.co/openai/whisper) |
-| | Baichuan | Large language model | [Baichuan on Hugging Face](https://huggingface.co/baichuan-inc/Baichuan-13B-Base) |
-| | huggingface_wavlm_base_plus | Audio language model for speech recognition | [WavLM on Hugging Face](https://huggingface.co/microsoft/wavlm-base-plus) |
-| | whisper_asr | Speech recognition model | [Whisper ASR on GitHub](https://github.com/openai/whisper) |
-| | trocr | Text recognition in images | [TrOCR on Hugging Face](https://huggingface.co/microsoft/trocr-base) |
-| |MobileLLM | Large language model | [MobileLLM on Hugging Face](https://huggingface.co/collections/facebook/mobilellm-6722be18cb86c20ebe113e95)|
-| **Audio** | Whisper | Speech-to-text | [Whisper on Hugging Face](https://huggingface.co/openai/whisper) |
-| | huggingface_wavlm_base_plus | Audio language model for speech recognition | [WavLM on Hugging Face](https://huggingface.co/microsoft/wavlm-base-plus) |
-| | whisper_asr | Speech recognition model | [Whisper ASR on GitHub](https://github.com/openai/whisper) |
-| **Vision** | aotgan | Image generation | [AOT-GAN on GitHub](https://github.com/researchmm/AOT-GAN) |
-| | convnext_tiny | Vision transformer for image classification | [ConvNeXt on Hugging Face](https://huggingface.co/facebook/convnext-tiny-224) |
-| | ddrnet23_slim | Image segmentation | [DDRNet on GitHub](https://github.com/ydhongHIT/DDRNet) |
-| | deeplabv3_resnet50 | Semantic image segmentation | [DeepLabV3 on TensorFlow Hub](https://tfhub.dev/tensorflow/deeplabv3/1) |
-| | densenet121 | Image classification | [DenseNet on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_densenet/) |
-| | detr_resnet101 | Object detection | [DETR on GitHub](https://github.com/facebookresearch/detr) |
-| | detr_resnet101_dc5 | Object detection | [DETR on GitHub](https://github.com/facebookresearch/detr) |
-| | detr_resnet50 | Object detection | [DETR on GitHub](https://github.com/facebookresearch/detr) |
-| | detr_resnet50_dc5 | Object detection | [DETR on GitHub](https://github.com/facebookresearch/detr) |
-| | esrgan | Image super-resolution | [ESRGAN on GitHub](https://github.com/xinntao/ESRGAN) |
-| | facebook_denoiser | Image denoising | [Denoiser on GitHub](https://github.com/facebookresearch/denoiser) |
-| | fcn_resnet50 | Semantic image segmentation | [FCN on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_fcn_resnet50/) |
-| | googlenet | Image classification | [GoogLeNet on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_googlenet/) |
-| | lama_dilated | Image inpainting | [LaMa on GitHub](https://github.com/saic-mdal/lama) |
-| | litehrnet | Image segmentation | [Lite-HRNet on GitHub](https://github.com/HRNet/Lite-HRNet) |
-| | mediapipe_face | Face detection | [MediaPipe Face on Google AI](https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html) |
-| | mediapipe_hand | Hand detection | [MediaPipe Hand on Google AI](https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html) |
-| | mnasnet05 | Image classification | [MnasNet on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_mnasnet/) |
-| | mobiledet | Object detection | [MobileDet on TensorFlow Hub](https://tfhub.dev/s?q=mobiledet) |
-| | mobilenet_v3_small | Image classification | [MobileNetV3 on TensorFlow Hub](https://tfhub.dev/google/imagenet/mobilenet_v3_small_100_224/classification/5) |
-| | openpose | Human pose estimation | [OpenPose on GitHub](https://github.com/CMU-Perceptual-Computing-Lab/openpose) |
-| | QuickSRNet_Large | Image super-resolution | [QuickSRNet on GitHub](https://github.com/QuickSRNet/QuickSRNet) |
-| | real_esrgan_general_x4v3 | Image super-resolution | [Real-ESRGAN on GitHub](https://github.com/xinntao/Real-ESRGAN) |
-| | real_esrgan_x4plus | Image super-resolution | [Real-ESRGAN on GitHub](https://github.com/xinntao/Real-ESRGAN) |
-| | resnet_2plus1d | Video classification | [ResNet-2+1D on PyTorch Hub](https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/) |
-| | resnet_3d | Video classification | [ResNet-3D on PyTorch Hub](https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/) |
-| | ResNeXt50 | Image classification | [ResNeXt on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_resnext/) |
-| | sam | Segmentation | [SAM on GitHub](https://github.com/facebookresearch/segment-anything) |
-| | Sesr_m3 | Image super-resolution | [SESR on GitHub](https://github.com/SESR/SESR) |
-| | shufflenet_v2 | Image classification | [ShuffleNetV2 on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_shufflenet_v2/) |
-| | sinet | Image segmentation | [SINet on GitHub](https://github.com/DengPingFan/SINet) |
-| | squeezenet_1 | Image classification | [SqueezeNet on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_squeezenet/) |
-| | stylegan2 | Image generation | [StyleGAN2 on GitHub](https://github.com/NVlabs/stylegan2) |
-| | unet_segmentation | Image segmentation | [UNet on GitHub](https://github.com/milesial/Pytorch-UNet) |
-| | vit | Image classification | [ViT on Hugging Face](https://huggingface.co/google/vit-base-patch16-224) |
-| | wideresnet50 | Image classification | [WideResNet on PyTorch Hub](https://pytorch.org/hub/pytorch_vision_wideresnet/) |
-| | xisr | Image super-resolution | [XISR on GitHub](https://github.com/XISR/XISR) |
-| | yolov6 | Object detection | [YOLOv6 on GitHub](https://github.com/meituan/YOLOv6) |
-| | yolov7 | Object detection | [YOLOv7 on GitHub](https://github.com/WongKinYiu/yolov7) |
-| | yolov8_det | Object detection | [YOLOv8 on GitHub](https://github.com/ultralytics/yolov8) |
-| | yolov8_seg | Object detection and segmentation | [YOLOv8 on GitHub](https://github.com/ultralytics/yolov8) |
-| **Multimodality** | ControlNet | Fine control over image generation | [ControlNet on GitHub](https://github.com/lllyasviel/ControlNet) |
-| | Stable Diffusion | Text-to-image generation | [Stable Diffusion on Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4) |
-| | Mediapipe_pose | Human pose estimation | [MediaPipe Pose on Google AI](https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html) |
-| **Other** | pinecone | Vector database | Pinecone [invalid URL removed] |
-| | weaviate-c2 | Vector database | Weaviate [invalid URL removed] |
-| | Intel | Various models | Intel AI [invalid URL removed] |
-| | kakao-enterprise | Various models | Hugging Face [invalid URL removed] |
-| | laion | Various models | Hugging Face [invalid URL removed] |
-| | openai | Various models | OpenAI [invalid URL removed] |
-| | runwayml | Various models | Hugging Face [invalid URL removed] |
-| | Salesforce | Various models | Hugging Face [invalid URL removed] |
-| | stabilityai | Various models | Hugging Face [invalid URL removed] |
-| | upstage | Various models | Hugging Face [invalid URL removed] |
-| | ybelkada | Various models | Hugging Face [invalid URL removed] |
+<table border="1">
+  <thead>
+    <tr>
+      <th colspan="2">Task</th>
+      <th>Model</th>
+      <th>Description</th>
+      <th>Reference</th>
+    </tr>
+    <tr>
+      <th>Main Category</th>
+      <th>Sub Category</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Computer Vision: 10 rows -->
+    <tr>
+      <td rowspan="10">Computer Vision</td>
+      <td>Object Detection</td>
+      <td>yolov8_det</td>
+      <td>Object detection for edge devices</td>
+      <td><a href="https://github.com/ultralytics/yolov8">YOLOv8 on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Image Classification</td>
+      <td>mobilenet_v3_small</td>
+      <td>Lightweight image classification</td>
+      <td><a href="https://tfhub.dev/google/imagenet/mobilenet_v3_small_100_224/classification/5">MobileNetV3 on TensorFlow Hub</a></td>
+    </tr>
+    <tr>
+      <td>Semantic Segmentation</td>
+      <td>deeplabv3_resnet50</td>
+      <td>Semantic image segmentation</td>
+      <td><a href="https://tfhub.dev/tensorflow/deeplabv3/1">DeepLabV3 on TensorFlow Hub</a></td>
+    </tr>
+    <tr>
+      <td>Instance Segmentation</td>
+      <td>yolov8_seg</td>
+      <td>Object detection and segmentation</td>
+      <td><a href="https://github.com/ultralytics/yolov8">YOLOv8 on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Object Tracking</td>
+      <td>DeepSort</td>
+      <td>Real-time object tracking</td>
+      <td><a href="https://github.com/nwojke/deep_sort">DeepSort on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Pose Estimation</td>
+      <td>openpose</td>
+      <td>Human pose estimation</td>
+      <td><a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Facial Recognition</td>
+      <td>mediapipe_face</td>
+      <td>Face detection and recognition</td>
+      <td><a href="https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html">MediaPipe Face on Google AI</a></td>
+    </tr>
+    <tr>
+      <td>Optical Character Recognition</td>
+      <td>trocr</td>
+      <td>Text recognition in images</td>
+      <td><a href="https://huggingface.co/microsoft/trocr-base">TrOCR on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Video Classification</td>
+      <td>resnet_2plus1d</td>
+      <td>Video classification for action recognition</td>
+      <td><a href="https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/">ResNet-2+1D on PyTorch Hub</a></td>
+    </tr>
+    <tr>
+      <td>Video Classification</td>
+      <td>resnet_3d</td>
+      <td>3D CNN for video classification</td>
+      <td><a href="https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/">ResNet-3D on PyTorch Hub</a></td>
+    </tr>
+    <!-- Audio Processing: 10 rows -->
+    <tr>
+      <td rowspan="10">Audio Processing</td>
+      <td>Speech-to-Text</td>
+      <td>distil-whisper</td>
+      <td>Lightweight speech recognition model</td>
+      <td><a href="https://huggingface.co/distil-whisper/distil-large-v3">Distil-Whisper on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Sound Classification</td>
+      <td>audio-spectrogram-transformer</td>
+      <td>Transformer for audio classification</td>
+      <td><a href="https://huggingface.co/MIT/ast-finetuned-audioset">AST on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Voice Activity Detection</td>
+      <td>silero-vad</td>
+      <td>Voice activity detection for edge devices</td>
+      <td><a href="https://github.com/snakers4/silero-vad">Silero VAD on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Acoustic Scene Classification</td>
+      <td>panns</td>
+      <td>Audio tagging and scene classification</td>
+      <td><a href="https://github.com/qiuqiangkong/panns">PANNS on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Speaker Diarization</td>
+      <td>pyannote-audio</td>
+      <td>Speaker diarization and segmentation</td>
+      <td><a href="https://huggingface.co/pyannote/speaker-diarization">PyAnnote on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Speech Recognition</td>
+      <td>wav2vec2</td>
+      <td>Self-supervised speech representation learning</td>
+      <td><a href="https://huggingface.co/facebook/wav2vec2-base-960h">Wav2vec2 on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <!-- Time Series: 10 rows -->
+    <tr>
+      <td rowspan="10">Time Series</td>
+      <td>Predictive Maintenance</td>
+      <td>tsmixer</td>
+      <td>Time-series forecasting for maintenance</td>
+      <td><a href="https://github.com/google-research/timesfm">TimesFM on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Anomaly Detection</td>
+      <td>IsolationForest</td>
+      <td>Anomaly detection in time-series data</td>
+      <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html">IsolationForest on Scikit-learn</a></td>
+    </tr>
+    <tr>
+      <td>Forecasting</td>
+      <td>informer</td>
+      <td>Transformer-based time-series forecasting</td>
+      <td><a href="https://github.com/zhouhaoyi/Informer2020">Informer on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Time-Series Classification</td>
+      <td>rocket</td>
+      <td>Efficient time-series classification</td>
+      <td><a href="https://github.com/angus924/rocket">ROCKET on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Image Super-Resolution</td>
+      <td>real_esrgan_x4plus</td>
+      <td>Image super-resolution for temporal data</td>
+      <td><a href="https://github.com/xinntao/Real-ESRGAN">Real-ESRGAN on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Image Inpainting</td>
+      <td>lama_dilated</td>
+      <td>Image inpainting for time-series analysis</td>
+      <td><a href="https://github.com/saic-mdal/lama">LaMa on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <!-- NLP: 10 rows -->
+    <tr>
+      <td rowspan="10">NLP</td>
+      <td>Speech Recognition</td>
+      <td>Whisper</td>
+      <td>General-purpose speech recognition model</td>
+      <td><a href="https://huggingface.co/openai/whisper">Whisper on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Keyword Spotting</td>
+      <td>silero-kws</td>
+      <td>Wake word detection for edge devices</td>
+      <td><a href="https://github.com/snakers4/silero-models">Silero Models on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Text Classification</td>
+      <td>distilbert</td>
+      <td>Lightweight transformer for text classification</td>
+      <td><a href="https://huggingface.co/distilbert-base-uncased">DistilBERT on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Named Entity Recognition</td>
+      <td>bert-ner</td>
+      <td>NER for entity extraction</td>
+      <td><a href="https://huggingface.co/dslim/bert-base-NER">BERT-NER on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Question Answering</td>
+      <td>mobilebert</td>
+      <td>Lightweight QA model for edge</td>
+      <td><a href="https://huggingface.co/google/mobilebert-uncased">MobileBERT on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Text Summarization</td>
+      <td>bart</td>
+      <td>Text summarization for short texts</td>
+      <td><a href="https://huggingface.co/facebook/bart-base">BART on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <!-- Generative AI: Image Generation & Synthesis (7 rows) -->
+    <tr>
+      <td rowspan="21">Generative AI</td>
+      <td rowspan="7">Image Generation & Synthesis</td>
+      <td>ControlNet</td>
+      <td>Fine control over image generation</td>
+      <td><a href="https://github.com/lllyasviel/ControlNet">ControlNet on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Stable Diffusion</td>
+      <td>Text-to-image generation</td>
+      <td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4">Stable Diffusion on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>stylegan2</td>
+      <td>Image generation</td>
+      <td><a href="https://github.com/NVlabs/stylegan2">StyleGAN2 on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Flux.1-schnell</td>
+      <td>Fast text-to-image generation</td>
+      <td><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">Flux.1 on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>Reve</td>
+      <td>Image generation with advanced text rendering</td>
+      <td><a href="https://huggingface.co/reve/reve">Reve on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <!-- Generative AI: Small LLM (7 rows) -->
+    <tr>
+      <td rowspan="7">Small Language Model (SLM)</td>
+      <td>SmolLM2-1.7B</td>
+      <td>Small language model for efficient text generation</td>
+      <td><a href="https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B">SmolLM2 on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>Gemma 2</td>
+      <td>Lightweight open model for text generation</td>
+      <td><a href="https://huggingface.co/google/gemma-2-2b">Gemma 2 on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>Phi-3.5-mini</td>
+      <td>Small language model with strong reasoning</td>
+      <td><a href="https://huggingface.co/microsoft/phi-3.5-mini-instruct">Phi-3.5-mini on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>Qwen2.5-1.5B</td>
+      <td>Efficient language model for instruction following</td>
+      <td><a href="https://huggingface.co/Qwen/Qwen2.5-1.5B">Qwen2.5 on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>Mixtral-8x22B</td>
+      <td>Sparse mixture of experts for text generation</td>
+      <td><a href="https://huggingface.co/mixtral-8x22b">Mixtral on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <!-- Generative AI: Multimodality (7 rows) -->
+    <tr>
+      <td rowspan="7">Multimodality</td>
+      <td>SmolVLM-256M</td>
+      <td>Smallest vision-language model for image understanding</td>
+      <td><a href="https://huggingface.co/HuggingFaceTB/SmolVLM-256M">SmolVLM-256M on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>SmolVLM-500M</td>
+      <td>Vision-language model for image and text tasks</td>
+      <td><a href="https://huggingface.co/HuggingFaceTB/SmolVLM-500M">SmolVLM-500M on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>BakLLaVA-1</td>
+      <td>Multimodal model for text and image tasks</td>
+      <td><a href="https://huggingface.co/SkunkworksAI/BakLLaVA-1">BakLLaVA-1 on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>PaliGemma</td>
+      <td>Vision-language model for multimodal tasks</td>
+      <td><a href="https://huggingface.co/google/paligemma">PaliGemma on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>Seed1.5-VL</td>
+      <td>Vision-language model with strong multimodal performance</td>
+      <td><a href="https://huggingface.co/ByteDance/Seed1.5-VL">Seed1.5-VL on Hugging Face</a></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <!-- Misc: 10 rows -->
+    <tr>
+      <td rowspan="10">Misc</td>
+      <td>Sensor Fusion</td>
+      <td>mediapipe_pose</td>
+      <td>Human pose estimation using sensor data</td>
+      <td><a href="https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html">MediaPipe Pose on Google AI</a></td>
+    </tr>
+    <tr>
+      <td>Activity Recognition</td>
+      <td>har-cnn</td>
+      <td>Human activity recognition from sensor data</td>
+      <td><a href="https://github.com/saif-mahmud/human-activity-recognition">HAR-CNN on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Contextual Awareness</td>
+      <td>SmolVLM-256M</td>
+      <td>Multimodal model for environment understanding</td>
+      <td><a href="https://huggingface.co/HuggingFaceTB/SmolVLM-256M">SmolVLM-256M on Hugging Face</a>, <a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+    <tr>
+      <td>Network Anomaly Detection</td>
+      <td>LOF</td>
+      <td>Local outlier factor for network anomalies</td>
+      <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.LocalOutlierFactor.html">LOF on Scikit-learn</a></td>
+    </tr>
+    <tr>
+      <td>Device Behavior Anomaly</td>
+      <td>Autoencoder</td>
+      <td>Anomaly detection for device behavior</td>
+      <td><a href="https://github.com/keras-team/keras-io/blob/master/examples/timeseries/timeseries_anomaly_detection.py">Keras Autoencoder</a></td>
+    </tr>
+    <tr>
+      <td>Sensor Data Anomaly</td>
+      <td>OC-SVM</td>
+      <td>One-class SVM for sensor data anomalies</td>
+      <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.OneClassSVM.html">OneClassSVM on Scikit-learn</a></td>
+    </tr>
+    <tr>
+      <td>On-device Control Systems</td>
+      <td>TD3</td>
+      <td>Twin Delayed DDPG for control systems</td>
+      <td><a href="https://github.com/sfujim/TD3">TD3 on GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Various</td>
+      <td>pinecone</td>
+      <td>Vector database</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Various</td>
+      <td>weaviate-c2</td>
+      <td>Vector database</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Various</td>
+      <td>upstage</td>
+      <td>Various models</td>
+      <td><a href="https://github.com/afondiel/awesome-smol">Awesome-Smol</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Resources
 
+### How to choose the best model for Edge AI application
+
+Selecting the right model for edge deployment is critical for balancing performance, efficiency, and resource constraints. Here’s a quick guide for edge AI developers, practitioners, and industry experts:
+
+### Why It Matters
+- **Efficiency**: Edge devices (e.g., IoT, mobile, embedded systems) have limited compute, memory, and power.
+- **Performance**: Real-time applications (e.g., autonomous drones, smart cameras) demand low latency and high accuracy.
+- **Scalability**: The right model ensures cost-effective deployment across devices.
+
+### Key Criteria
+1. **Task Requirements**: Match the model to your application (e.g., vision, audio, multimodal).
+2. **Hardware Constraints**: Consider compute (OPS), memory (MB), and energy (mWh) limits of your device.
+3. **Performance Goals**: Balance accuracy, latency, and throughput for your use case.
+4. **Deployment Ease**: Check compatibility with frameworks (e.g., TensorFlow Lite, ONNX).
+
+**Next Steps**: Once you’ve shortlisted a model, use the [Model Benchmarking Guide](./model-bench-guide.md) to profile and optimize the model performance.
+
+### Edge AI Technical Guide for Developers and Practitioners
+
 - [Edge AI Engineering](https://github.com/afondiel/edge-ai-engineering) 
-- [Edge Vision](https://github.com/afondiel/edge-vision)
-- [Edge AI Platforms](https://github.com/afondiel/Edge-AI-Platforms)
-- [Edge AI Model Zoo](https://github.com/afondiel/Edge-AI-Model-Zoo)
-- [Edge AI Frameworks](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/frameworks)
-- [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
-- [Edge AI Qualcomm Stack](https://www.qualcomm.com/developer/artificial-intelligence)
-- [Edge AI Benchmarking & Optimization](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/model-bench-prof-opt-guide.md)
 - [Edge AI Technical Guide](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts)
+- [Edge AI End-to-End Stack](https://www.qualcomm.com/developer/artificial-intelligence)
+- [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
+- [Edge AI Optimization Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/optimization)
+- [Edge AI Frameworks](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/frameworks)
+- [Edge AI Platforms](https://github.com/afondiel/Edge-AI-Platforms)
+- [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo)
+- [Edge AI Model Benchmarking](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/model-bench-guide.md)
 - [Edge AI Ecosystem](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/industry-applications)
 - [Edge AI Books](https://github.com/afondiel/cs-books/blob/main/README.md#edge-computing)
 - [Edge AI Blog](https://afondiel.github.io/posts/)
+- [Edge AI Papers](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/resources/papers)
 
 [Back to Table of Contents](#table-of-contents)
