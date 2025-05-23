@@ -522,6 +522,6 @@ Selecting the right model for edge deployment is critical for balancing performa
 - [Edge AI Ecosystem](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/industry-applications)
 - [Edge AI Books](https://github.com/afondiel/cs-books/blob/main/README.md#edge-computing)
 - [Edge AI Blog](https://afondiel.github.io/posts/)
-- [Edge AI Papers](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/resources/papers)
+- [Edge AI Papers](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/resources/edge_ai_papers_news.md)
 
 [Back to Table of Contents](#table-of-contents)

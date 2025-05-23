@@ -175,101 +175,105 @@ Use the profiling tools provided by your inference framework (Onnx runtime, Lite
 
 ### **Profiling Metrics Examples**
 
-<table>
-  <tr>
-    <th>Model</th>
-    <th>Bit-Width (W/A) </th>
-    <th>Size (MB)</th>
-    <th>Params</th>
-    <th>Depth</th>
-    <th>Top-1 Accuracy</th>
-    <th>Top-5 Accuracy</th>
-    <th>Latency (ms) (CPU)</th>
-    <th>Latency (ms) (GPU) </th>
-    <th>Energy (W)</th>
-    <th colspan="3">Compute (OPS/GFlops)</th>
-    <th>Platform</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th>CPU</th>
-    <th>GPU</th>
-    <th>NPU</th>
-    <th>--</th>
-  </tr>
-  <tr>
-    <td>Xception</td>
-    <td>FP32</td>
-    <td>88</td>
-    <td>22.9M</td>
-    <td>81</td>
-    <td>79.0%</td>
-    <td>94.5%</td>
-    <td>109.4</td>
-    <td>8.1</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-<td>
-  </tr>
-  <tr>
-    <td>VGG16</td>
-    <td>FP32</td>
-    <td>528</td>
-    <td>138.4M</td>
-    <td>16</td>
-    <td>71.3%</td>
-    <td>90.1%</td>
-    <td>69.5</td>
-    <td>4.2</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-<td>
-  </tr>
-  <tr>
-    <td>VGG19</td>
-    <td>FP32</td>
-    <td>549</td>
-    <td>143.7M</td>
-    <td>19</td>
-    <td>71.3%</td>
-    <td>90.0%</td>
-    <td>84.8</td>
-    <td>4.4</td>    
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-<td>
-  </tr>
-  <tr>
-    <td>ResNet50</td>
-    <td>FP32</td>
-    <td>98</td>
-    <td>25.6M</td>
-    <td>107</td>
-    <td>74.9%</td>
-    <td>92.1%</td>
-    <td>58.2</td>
-    <td>4.6</td>    
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-<td>
-  </tr>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Bit-Width (W/A) </th>
+      <th>Size (MB)</th>
+      <th>Params</th>
+      <th>Depth</th>
+      <th>Top-1 Accuracy</th>
+      <th>Top-5 Accuracy</th>
+      <th>Latency (ms) (CPU)</th>
+      <th>Latency (ms) (GPU) </th>
+      <th>Energy (W)</th>
+      <th colspan="3">Compute (OPS/GFlops)</th>
+      <th>Platform</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>CPU</th>
+      <th>GPU</th>
+      <th>NPU</th>
+      <th>--</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Xception</td>
+      <td>FP32</td>
+      <td>88</td>
+      <td>22.9M</td>
+      <td>81</td>
+      <td>79.0%</td>
+      <td>94.5%</td>
+      <td>109.4</td>
+      <td>8.1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>VGG16</td>
+      <td>FP32</td>
+      <td>528</td>
+      <td>138.4M</td>
+      <td>16</td>
+      <td>71.3%</td>
+      <td>90.1%</td>
+      <td>69.5</td>
+      <td>4.2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>VGG19</td>
+      <td>FP32</td>
+      <td>549</td>
+      <td>143.7M</td>
+      <td>19</td>
+      <td>71.3%</td>
+      <td>90.0%</td>
+      <td>84.8</td>
+      <td>4.4</td>    
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-<td>
+    </tr>
+    <tr>
+      <td>ResNet50</td>
+      <td>FP32</td>
+      <td>98</td>
+      <td>25.6M</td>
+      <td>107</td>
+      <td>74.9%</td>
+      <td>92.1%</td>
+      <td>58.2</td>
+      <td>4.6</td>    
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-<td>
+    </tr>
+  </tbody>
 </table>
 
 **Test environments**
@@ -298,63 +302,67 @@ After identifying performance bottlenecks, you can apply Edge AI SOTA optimizati
 
 For example, if you decide to use Quantization, reducing the model precision from `FP32` to `INT8`, enabling reduce the memory footprint and speedup computation, you may endup with the following table.
 
-<table>
-  <tr>
-    <th>Model</th>
-    <th>Bit-Width (W/A) </th>
-    <th>Size (MB)</th>
-    <th>Params (MB)</th>
-    <th>Top-1% Accuracy</th>
-    <th>Storage (MB)</th>
-    <th>Latency (ms) </th>
-    <th>Throughput (inf/s) </th>
-    <th>Energy (W)</th>
-    <th colspan="3">Compute (OPS/GFlops)</th>
-    <th>Platform</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th>CPU</th>
-    <th>GPU</th>
-    <th>NPU</th>
-    <th>--</th>
-  </tr>
-  <tr><td rowspan="3">ResNet-50</td></tr>
-  <tr>
-    <td>FP32 (Full Precision)</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td rowspan="3">MCU, Pi, Jetson Nano<td>
-  </tr>
-  <tr>
-    <td>INT8 (Quantized)</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Bit-Width (W/A) </th>
+      <th>Size (MB)</th>
+      <th>Params (MB)</th>
+      <th>Top-1% Accuracy</th>
+      <th>Storage (MB)</th>
+      <th>Latency (ms) </th>
+      <th>Throughput (inf/s) </th>
+      <th>Energy (W)</th>
+      <th colspan="3">Compute (OPS/GFlops)</th>
+      <th>Platform</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>CPU</th>
+      <th>GPU</th>
+      <th>NPU</th>
+      <th>--</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="3">ResNet-50</td></tr>
+    <tr>
+      <td>FP32 (Full Precision)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td rowspan="3">MCU, Pi, Jetson Nano<td>
+    </tr>
+    <tr>
+      <td>INT8 (Quantized)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
 </table>
 
 ## Step 6: Iteration
