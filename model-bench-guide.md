@@ -128,7 +128,7 @@ def show_predictions(model):
 Selecting the right edge platform/device is crucial for the overall performance and efficiency of your application (computational demands, environmental conditions, operational constraints, etc.). Please refer to [resource](https://github.com/afondiel/Edge-AI-Platforms) for more in depth.
 
 
-| **Target Device**                          | **CPU (Core)**      | **Speed (MHz/GHz)**         | **HW Accelerator(GPU/NPU)[1]**| **Compute (OPS)**     | **Memory Usage (RAM)**   |**Energy (mWh)** |**Storage (SD card/Onboard Flash)** | **Temperature (°C)** |
+| **Target Device**                          | **CPU (Core)**      | **Speed (MHz/GHz)**         | **HW Accelerator(GPU/NPU)[^1]**| **Compute (OPS)**     | **Memory Usage (RAM)**   |**Energy (mWh)** |**Storage (SD card/Onboard Flash)** | **Temperature (°C)** |
 |--------------------------------------------|---------------------|-----------------------------|----------------------------|-----------------------|--------------------------|-----------------|-------------------------------------|----------------------|
 | **System on Chips (SoCs)**                 | -                   | MHz/GHz                     |  -                         | GFlops                | MB                       |mWh              |-                                     | °C                   |               
 | **Microcontrollers (MCUs)**                | -                   | MHz                         |  -                         | GFlops                | KB                       |mWh              |-                                     | °C                   | 
@@ -139,7 +139,7 @@ Selecting the right edge platform/device is crucial for the overall performance 
 | **Industrial and Custom Edge Devices**     | -                   | GHz                         |  -                         | GFlops                | MB/GB                    |mWh/W            |-                                     | °C                   |
 | **Robotics-Focused Edge Devices**          | -                   | GHz                         |  -                         | GFlops                | MB/GB                    |mWh/W            |-                                     | °C                   |
 
-[1]: Onboard AI accelerator for high-performance workloads/Applications
+[^1]: Onboard AI accelerator for high-performance workloads/Applications
 
 ### **Rule of Thumb**
 - **Small Devices (e.g., IoT sensors)**: Use the smallest model with acceptable accuracy.
