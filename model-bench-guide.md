@@ -50,7 +50,7 @@ Some examples of key metrics:
 
 Bench Table Template
 
-| **Model**       | **Task**               | **Accuracy** | **Latency (ms)** | **Model Size (MB)** |**Params Size (MB)** | **Compute Cost (GFLOPS)**         | **Platform**                         |
+| **Model**       | **Task**               | **Accuracy** | **Latency (ms)** | **Model Size (MB)** |**Params Size (MB)** | **Compute Cost (GFLOPS)**         | **[Platform](#step-2-choose-your-target-edge-platform)**                         |
 |------------------|------------------------|--------------|------------------|---------------------|---------------------|----------------------|---------------------------------------|
 | MobileNet V2     | Image Classification  | 72.0%        | 25               | 4.3                 |3.5                 | XX    | Android, iOS, Web  |
 
@@ -125,7 +125,7 @@ def show_predictions(model):
 
 ## Step 2: Choose Your Target Edge Platform
 
-Selecting the right edge platform/device is crucial for the overall performance and efficiency of your application (computational demands, environmental conditions, operational constraints, etc.). Please refer to [resource](https://github.com/afondiel/Edge-AI-Platforms) for more in depth.
+Selecting the right edge platform/device is crucial for the overall performance and efficiency of your application (computational demands, environmental conditions, operational constraints, etc.). Please refer to this [resource](https://github.com/afondiel/Edge-AI-Platforms) for more in depth.
 
 
 | **Target Device**                          | **CPU Workloads (%)**      | **AI Processor (GPU/NPU)[^1]**| **Compute (OPS)**  | **Speed (TOPS/s)[^2]**        | **Memory Footprint (RAM/VRAM)**|**Storage usage (SD card/Onboard Flash)**     |**Power (W)**    |**Energy (Wh/J)** |**Efficiency (GOPS/W)[^3]**  |**Temperature (°C)** |
@@ -192,7 +192,7 @@ Use the profiling tools provided by your inference framework (Onnx runtime, Lite
       <th>Latency (ms) (GPU) </th>
       <th>Energy (W)</th>
       <th colspan="3">Compute (OPS/GFlops)</th>
-      <th>Platform</th>
+      <th><a href="#step-2-choose-your-target-edge-platform">Platform</a></th>
     </tr>
     <tr>
       <th></th>
