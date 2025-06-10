@@ -128,7 +128,7 @@ def show_predictions(model):
 Selecting the right edge platform/device is crucial for the overall performance and efficiency of your application (computational demands, environmental conditions, operational constraints, etc.). Please refer to [resource](https://github.com/afondiel/Edge-AI-Platforms) for more in depth.
 
 
-| **Target Device**                          | **CPU (Cores)**      | **HW Accelerator(GPU/NPU)[^1]**| **Compute (OPS)**  | **Speed (TOPS/s)**        | **Memory Footprint (RAM)**|**Storage usage (SD card/Onboard Flash)**     |**Power (W)**    |**Energy (Wh)** |**Efficiency (GOPS/W)[^3]**  |**Temperature (°C)** |
+| **Target Device**                          | **CPU (Cores)**      | **HW Accelerator(GPU/NPU)[^1]**| **Compute (OPS)**  | **Speed (TOPS/s)[^2]**        | **Memory Footprint (RAM)**|**Storage usage (SD card/Onboard Flash)**     |**Power (W)**    |**Energy (Wh)** |**Efficiency (GOPS/W)[^3]**  |**Temperature (°C)** |
 |--------------------------------------------|----------------------|----------------------------|-----------------------|----------------------------|--------------------------|----------------------------------------|-----------------|-----------------|------------------|---------------------|
 | **System on Chips (SoCs)**                 | -                    |  -                         | GFlops                | MHz/GHz                    | MB                       |-                                       |mWh              |mWh              |mWh               |°C                   |               
 | **Microcontrollers (MCUs)**                | -                    |  -                         | GFlops                | MHz                        | KB                       |-                                       |mWh              |mWh              |mWh               |°C                   | 
@@ -140,8 +140,8 @@ Selecting the right edge platform/device is crucial for the overall performance 
 | **Robotics-Focused Edge Devices**          | -                    |  -                         | GFlops                | GHz                        | MB/GB                    |-                                       |mWh/W            |mWh/W            |mWh/W             |°C                   |
 
 [^1]: Onboard AI accelerator for high-performance workloads/Applications
-[^2]: TOPS/s - Speed i.e. Number of Trillion of Operation per second
-[^3]: GOPS/W - Energy Efficiency 
+[^2]: Measures the peak computational capacity (throughput) of an AI processor or SoC i.e., TOPS=2 x MACs x frequency/10^12
+[^3]: Measures the computational operations (achieved during workload) per watt of power consumed
 
 ### **Rule of Thumb**
 - **Small Devices (e.g., IoT sensors)**: Use the smallest model with acceptable accuracy.
