@@ -5,13 +5,13 @@
 A curated list of Model Zoos & Hubs where you can find production-ready and optimized models for resource-constrained devices.
 
 ## Table of Contents
-- [Model Zoos & Hubs](#model-zoos--hubs)
-- [Model by Application: Use Cases](#model-by-application-use-cases)
-- [Resources](#resources)
+1. [Model Zoos & Hubs](#1-model-zoos--hubs)
+2. [Model by Domain & Use Case](#2-model-by-domain--use-case)
+3. [Resources](#resources)
     - [How to choose the best model for Edge AI application](#how-to-choose-the-best-model-for-edge-ai-application)
     - [Edge AI Technical Guide for Developers and Practitioners](#edge-ai-technical-guide-for-developers-and-practitioners)
 
-## Model Zoos & Hubs
+## 1. Model Zoos & Hubs
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -41,26 +41,20 @@ A curated list of Model Zoos & Hubs where you can find production-ready and opti
 | Baidu AI Open Model Zoo | Baidu's collection of AI models. | [Baidu AI Open Model Zoo](https://ai.baidu.com/tech/modelzoo) |
 | Hailo Model Zoo | A set of models optimized for Hailo's AI processors. | [Hailo Model Zoo](https://github.com/hailo-ai/hailo_model_zoo) |
 
-## Model by Application: Use Cases
+## 2. Model by Domain & Use Case
 
 [Back to Table of Contents](#table-of-contents)
 
-Models categorized by tasks and capabilities for real-world applications.
+This is a non-exhaustive selection of models from several platforms listed in [Section 1](#1-model-zoos--hubs), ranged into six domains and a variety of tasks, with a focus on efficiency and real-world applications.
 
 <table border="1">
   <thead>
     <tr>
-      <th colspan="2">Task</th>
+      <th>Domain</th>
+      <th>Task</th>
       <th>Model</th>
       <th>Description</th>
       <th>Reference</th>
-    </tr>
-    <tr>
-      <th>Main Category</th>
-      <th>Sub Category</th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
