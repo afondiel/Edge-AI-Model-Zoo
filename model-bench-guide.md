@@ -318,7 +318,7 @@ For example, if you decide to use Quantization, reducing the model precision fro
       <th>Throughput (inf/s) </th>
       <th>Energy (W)</th>
       <th colspan="3">Compute (OPS/GFlops)</th>
-      <th>Platform</th>
+      <th><a href="#step-2-choose-your-target-edge-platform">Platform</a></th>
     </tr>
     <tr>
       <th></th>
