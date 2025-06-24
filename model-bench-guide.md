@@ -162,9 +162,13 @@ Resources for model Deployment:
 
 ## Step 4: Profile and Identify Bottlenecks
 
+![](./resources/torch-profiler.png)
+
+- Credit: ([Link](https://www.youtube.com/watch?v=8Rr_8jy1_GY))
+
 Analyze the model’s runtime behavior to identify performance bottlenecks, resource usage (Computation workload, memory footprint, Energy consumption), and optimization opportunities.
 
-Use the profiling tools provided by your inference framework (Onnx runtime, LiteRT, NVIDIA TensorRT, ...)
+Use the profiling tools provided by your training/inference framework (Pytorch, Onnx runtime, LiteRT, NVIDIA TensorRT, ...)
 - **[TensorFlow Lite Benchmark Tool](https://www.tensorflow.org/lite/performance/measurement)**: Measures latency and memory on mobile devices.
 - **[ONNX Runtime Profiler](https://onnxruntime.ai/)**: Profiles layer-wise performance.
 - **[NVIDIA Jetson Performance Tool (JTOP)](https://github.com/rbonghi/jetson_stats)**: Monitor and benchmark AI workloads on NVIDIA Jetson devices.
@@ -298,6 +302,19 @@ Time per inference step is the average of 30 batches and 10 repetitions.
 Depth counts the number of layers with parameters.
 ```
 (Source: [Keras Applications](https://keras.io/api/applications/))
+
+### Tracing
+
+![](./resources/tracing.png)
+
+- Credit: ([Link](https://www.youtube.com/watch?v=8Rr_8jy1_GY))
+
+Use tracing tool to [analyze](https://docs.pytorch.org/tutorials/intermediate/tensorboard_profiler_tutorial.html) your profiling results:
+
+- [TensorBoard (Standalone)](https://www.tensorflow.org/tensorboard)
+- [chrome://tracing](chrome://tracing)
+- [Perfetto](https://perfetto.dev/docs/)
+
 
 ## Step 5: Optimize
 
