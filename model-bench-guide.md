@@ -1,11 +1,11 @@
 # Edge AI Model Benchmarking Guide
 
-This guide walks you through **benchmarking** and **profiling** AI models to streamline the optimization and deployment process in order to improve performance based on your Edge AI application requirements. 
+An effective guide to conducting comprehensive performance benchmarking and profiling of AI models for Edge AI systems, aimed at identifying bottlenecks, scalability challenges, and optimization opportunities to accelerate Edge AI applications
 
 ## Table of Contents
 
-- [Bench Workflow](#bench-workflow)
-- [Step 0: You have at least a model to begin with, ideally from Edge AI Model Zoos](#step-0-you-have-at-least-a-model-to-begin-with-ideally-from-edge-ai-model-zoos)
+- [Benchmarking Workflow](#benchmarking-workflow)
+- [Step 0: Select the Model](#step-0-select-the-model)
 - [Step 1: Benchmark the Model's Baseline Performance](#step-1-benchmark-the-models-baseline-performance)
 - [Step 2: Choose Your Target Edge Platform](#step-2-choose-your-target-edge-platform)
 - [Step 3: Deploy](#step-3-deploy)
@@ -14,7 +14,7 @@ This guide walks you through **benchmarking** and **profiling** AI models to str
 - [Step 6: Iterate](#step-6-iterate)
 - [Resources](#resources)
 
-## Bench Workflow
+## Benchmarking Workflow
 
 ```mermaid
    graph LR
@@ -162,19 +162,23 @@ Resources for model Deployment:
 
 ## Step 4: Profile and Identify Bottlenecks
 
-Analyze the model’s runtime behavior to identify performance bottlenecks, resource usage (Computation load, memory footprint, Energy consumption), and optimization opportunities.
+Analyze the model’s runtime behavior to identify performance bottlenecks, resource usage (Computation workload, memory footprint, Energy consumption), and optimization opportunities.
 
 Use the profiling tools provided by your inference framework (Onnx runtime, LiteRT, NVIDIA TensorRT, ...)
 - **[TensorFlow Lite Benchmark Tool](https://www.tensorflow.org/lite/performance/measurement)**: Measures latency and memory on mobile devices.
 - **[ONNX Runtime Profiler](https://onnxruntime.ai/)**: Profiles layer-wise performance.
 - **[NVIDIA Jetson Performance Tool (JTOP)](https://github.com/rbonghi/jetson_stats)**: Monitor and benchmark AI workloads on NVIDIA Jetson devices.
-- **[PyTorch Benchmark Utilities](https://pytorch.org/tutorials/recipes/benchmark.html)**: Benchmark PyTorch models for speed and memory usage.
+- **[PyTorch Benchmark Utilities](https://docs.pytorch.org/tutorials/recipes/recipes/benchmark.html)**: Benchmark PyTorch models for speed and memory usage.
+  - [TorchProfiler](https://docs.pytorch.org/tutorials/recipes/recipes/profiler_recipe.html), [TorchBench](https://github.com/pytorch/benchmark)
 -  **[Edge Impulse](https://www.edgeimpulse.com/)**: End-to-end benchmarking and deployment on edge devices.
 - **[Qualcomm Profiler](https://www.qualcomm.com/developer/software/qualcomm-profiler)**: a system-wide tool designed to visualize system performance and identify optimization. 
 - **[Geekbench](https://www.geekbench.com/)**: a cross-platform benchmark that measures your system's performance
 - **[ARM Compute Library](https://developer.arm.com/tools-and-software/compute-library)**:Benchmark AI models on ARM processors (e.g., Cortex-M, Cortex-A).  
 - **[AWS SageMaker Edge Manager](https://aws.amazon.com/sagemaker/edge/)**: Benchmark, manage, and optimize AI models on edge devices connected to AWS.
-- **[Google ML Kit](https://developers.google.com/ml-kit)**: Benchmark pre-trained models and custom solutions on Android/iOS devices.  
+- **[Google ML Kit](https://developers.google.com/ml-kit)**: Benchmark pre-trained models and custom solutions on Android/iOS devices.
+- **[MLPerf Tiny](https://github.com/mlcommons/tiny)**: an ML benchmark suite for extremely low-power systems such as microcontrollers
+- **[MLPerf Edge](https://github.com/mlcommons/inference)**: a benchmark suite for measuring how fast systems can run models in a variety of deployment scenarios from Edge to Cloud
+
 
 ### **Profiling Metrics Examples**
 
@@ -299,7 +303,7 @@ Depth counts the number of layers with parameters.
 
 ![](resources/edge-ai-opt-triad.png)
 
-Xubin Wang et al. "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies", arXiv pp, [arXiv:2501.03265v1](https://arxiv.org/abs/2501.03265), 2025
+Wang et al. "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies", arXiv pp, [arXiv:2501.03265v1](https://arxiv.org/abs/2501.03265), 2025
 
 After identifying performance bottlenecks, you can apply Edge AI SOTA optimizations technique from Data Pipeline, Model to System Architecture (Application) to meet the target success.
 
