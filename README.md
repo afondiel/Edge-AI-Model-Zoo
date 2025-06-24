@@ -485,9 +485,9 @@ This is a non-exhaustive selection of models from several platforms listed in [S
 
 ## Resources
 
-### How to choose the best model for Edge AI application
+### How to choose the best model for an Edge AI application
 
-Selecting the right model for edge deployment is critical for balancing performance, efficiency, and resource constraints. Here’s a quick guide for edge AI developers, practitioners, and industry experts:
+Selecting the right model for edge deployment is critical for balancing **performance**, **accuracy** and **efficiency**.
 
 ### Why It Matters
 - **Efficiency**: Edge devices (e.g., IoT, mobile, embedded systems) have limited compute, memory, and power.
@@ -500,7 +500,7 @@ Selecting the right model for edge deployment is critical for balancing performa
 3. **Performance Goals**: Balance accuracy, latency, and throughput for your use case.
 4. **Deployment Ease**: Check compatibility with frameworks (e.g., TensorFlow Lite, ONNX).
 
-**Next Steps**: Once you’ve shortlisted a model, use the [Model Benchmarking Guide](./model-bench-guide.md) to profile and optimize the model performance.
+**Next Steps**: Once you’ve shortlisted a model, use the [Model Benchmarking Guide](./model-bench-guide.md) to **profile** and **optimize** the model performance.
 
 ### Edge AI Technical Guide for Developers and Practitioners
 
