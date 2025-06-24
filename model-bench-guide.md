@@ -312,7 +312,7 @@ Depth counts the number of layers with parameters.
 Use tracing tool to [analyze](https://docs.pytorch.org/tutorials/intermediate/tensorboard_profiler_tutorial.html) your profiling results:
 
 - [TensorBoard (Standalone)](https://www.tensorflow.org/tensorboard)
-- [Chrome Tracing](chrome://tracing/)
+- [chrome://tracing/](chrome://tracing/)
 - [Perfetto](https://perfetto.dev/docs/)
 
 
