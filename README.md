@@ -500,7 +500,7 @@ Selecting the right model for edge deployment is critical for balancing **perfor
 3. **Performance Goals**: Balance accuracy, latency, and throughput for your use case.
 4. **Deployment Ease**: Check compatibility with frameworks (e.g., TensorFlow Lite, ONNX).
 
-**Next Steps**: Once you’ve shortlisted a model, use the [Model Benchmarking Guide](./model-bench-guide.md) to **profile** and **optimize** the model performance.
+**Next Steps**: Once you’ve shortlisted a model, use the [Edge AI Benchmarking Guide](https://github.com/afondiel/Edge-AI-Benchmarking-Guide) to **profile** and **optimize** the model performance.
 
 ### Edge AI Technical Guide for Developers and Practitioners
 
@@ -512,7 +512,7 @@ Selecting the right model for edge deployment is critical for balancing **perfor
 - [Edge AI Frameworks](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/frameworks)
 - [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo)
 - [Edge AI Platforms](https://github.com/afondiel/Edge-AI-Platforms)
-- [Edge AI Model Benchmarking](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/model-bench-guide.md)
+- [Edge AI Benchmarking Guide](https://github.com/afondiel/Edge-AI-Benchmarking-Guide)
 - [Edge AI Ecosystem](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/industry-applications)
 - [Edge AI Books](https://github.com/afondiel/cs-books/blob/main/README.md#edge-computing)
 - [Edge AI Blog](https://afondiel.github.io/posts/)
