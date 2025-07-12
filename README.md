@@ -500,7 +500,7 @@ Selecting the right model for edge deployment is critical for balancing **perfor
 3. **Performance Goals**: Balance accuracy, latency, and throughput for your use case.
 4. **Deployment Ease**: Check compatibility with frameworks (e.g., TensorFlow Lite, ONNX).
 
-**Next Steps**: Once you’ve shortlisted a model, use the [Edge AI Benchmarking Guide](https://github.com/afondiel/Edge-AI-Benchmarking-Guide) to **profile** and **optimize** the model performance.
+**Next Steps**: Once you’ve shortlisted a model, use the [Edge AI Benchmarking Guide](https://github.com/afondiel/Edge-AI-Benchmarking) to **profile** and **optimize** the model performance.
 
 ### Edge AI Technical Guide for Developers and Practitioners
 
