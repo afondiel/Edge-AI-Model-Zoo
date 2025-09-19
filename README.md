@@ -23,6 +23,7 @@ A curated list of Model Zoos & Hubs where you can find production-ready and opti
 | NVIDIA Pretrained AI Models (NGC + TAO)| Accelerate AI development with world-class customizable pretrained models from NVIDIA. | - [NVIDIA Pretrained AI Models - Main](https://developer.nvidia.com/ai-models) <br> - [NGC Model Catalog](https://catalog.ngc.nvidia.com/models?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=) <br> -  [TAO Model Zoo](https://docs.nvidia.com/tao/tao-toolkit/text/model_zoo/overview.html)|
 | OpenVINO Model Zoo | A collection of pre-trained models ready for use with Intel's OpenVINO toolkit. | [OpenVINO Model Zoo](https://github.com/openvinotoolkit/open_model_zoo) |
 | Qualcomm Models Zoo | A collection of AI models from Qualcomm. | [Qualcomm Models Zoo](https://github.com/quic/ai-hub-models/) |
+| Apple Core ML Models | A collection of AI models for Core ML applications | [Apple Core ML Models](https://developer.apple.com/machine-learning/models/) |
 | LiteRT Pre-trained models | Pre-trained models optimized for Google's Lite Runtime. | [LiteRT Pre-trained Models](https://ai.google.dev/edge/litert/models/trained) |
 | Keras Applications | Pre-trained models for Keras applications| [Keras Pre-trained Models](https://keras.io/api/applications/#available-models) |
 | MediaPipe | Framework for building multimodal applied machine learning pipelines. | [MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/guide) |
